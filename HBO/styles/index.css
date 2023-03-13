@@ -1,0 +1,73 @@
+body {
+  max-width: 1920px;
+  background: #000;
+  color: rgba(255, 255, 255, 1);
+  font-family: "Lato", sans-serif;
+}
+
+.page {
+  width: 1276px;
+  margin: 24px auto 32px;
+}
+
+/*HEADER*/
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 100px;
+  height: 40.56px;
+  cursor: pointer;
+}
+
+.logo:hover {
+  opacity: 0.7;
+  transition: all 0.3s ease-out;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 115px;
+}
+
+.wrapper-left {
+  display: flex;
+  gap: 43px;
+}
+
+.wrapper-right {
+  display: flex;
+  gap: 59px;
+}
+
+.wrapper-item {
+  color: rgba(255, 255, 255, 0.75);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+}
+.wrapper-item:hover {
+  color: rgba(255, 255, 255, 1);
+  transition: all 0.3s ease-out;
+}
+
+.signin {
+  width: 121px;
+  height: 40px;
+  background: #0059c1;
+  border-radius: 12px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.signin:hover {
+  background: #1274e5;
+  transition: all 0.3s ease-out;
+}
