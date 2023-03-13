@@ -115,10 +115,12 @@ main {
 .slider-play_btn {
   width: 40px;
   height: 40px;
-background-image: url(../img/icon/playICON.png) 12px 14px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(2.5px);
+  background: url(../img/icon/playICON.png) no-repeat 50%/11.9px 14.9px rgba(255, 255, 255, 0.1);
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
+  cursor: pointer;
+  
 }
 .slider-play_text {
   font-family: "Lato";
