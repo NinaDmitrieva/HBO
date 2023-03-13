@@ -5,6 +5,10 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+main {
+  width: 100%;
+}
+
 .page {
   width: 1276px;
   margin: 24px auto 32px;
@@ -70,4 +74,58 @@ body {
 .signin:hover {
   background: #1274e5;
   transition: all 0.3s ease-out;
+}
+
+/*SLIDER SECTION*/
+.slider {
+  padding-top: 36px;
+}
+
+.slider-img {
+  background-image: url(../img/contentIMG.png);
+  min-height: 595px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.slider-img::before {
+  content: "";
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 63.19%, #000000 100%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.slider-box {
+  margin: 0 auto;
+}
+.slider-box-logo {
+  width: 658px;
+}
+.slider-play {
+  margin: 0 auto;
+  display: flex;
+  gap: 10px;
+}
+.slider-play_btn {
+  width: 40px;
+  height: 40px;
+background-image: url(../img/icon/playICON.png) 12px 14px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(2.5px);
+  border-radius: 50%;
+}
+.slider-play_text {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  align-items: center;
+  display: flex;
 }
