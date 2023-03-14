@@ -87,7 +87,7 @@ main {
   position: relative;
   z-index: 1;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   flex-direction: column;
 }
 .slider-img::before {
@@ -104,13 +104,32 @@ main {
 .slider-box {
   margin: 0 auto;
 }
+
 .slider-box-logo {
   width: 658px;
 }
+
+.slider-scrollLine {
+  width: 500px;
+  margin-top: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+/*возможно тут стоит сделать через лейбл и инпут, тогда при выборе части полосы прокрутки мы будем попадать на нужный слайд */
+/*если через checkbox, то checked - мы убираем дисплей блок с картинки и показываем ее*/
+.slider-scrollLine::before {
+  content: "";
+  border-bottom: 1px solid rgba(227, 177, 0, 1);
+  width: 100px;
+  position: absolute;
+}
+
 .slider-play {
   margin: 0 auto;
   display: flex;
   gap: 10px;
+  padding-top: 20px;
 }
 .slider-play_btn {
   width: 40px;
@@ -120,7 +139,11 @@ main {
   height: 40px;
   border-radius: 50%;
   cursor: pointer;
-  
+}
+
+.slider-play_btn:hover {
+  box-shadow: 0 0 10px 0 rgba(227, 177, 0) inset, 0 0 10px 2px rgb(229, 203, 110);
+   transition: all 0.3s ease-out;
 }
 .slider-play_text {
   font-family: "Lato";
