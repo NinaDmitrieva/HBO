@@ -3,6 +3,7 @@ body {
   background: #000;
   color: rgba(255, 255, 255, 1);
   font-family: "Lato", sans-serif;
+  font-style: normal;
 }
 
 main {
@@ -49,7 +50,6 @@ main {
 
 .wrapper-item {
   color: rgba(255, 255, 255, 0.75);
-  font-style: normal;
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
@@ -64,7 +64,6 @@ main {
   height: 40px;
   background: #0059c1;
   border-radius: 12px;
-  font-style: normal;
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
@@ -148,8 +147,6 @@ main {
   transition: all 0.3s ease-out;
 }
 .slider-play_text {
-  font-family: "Lato";
-  font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 18px;
@@ -164,7 +161,6 @@ main {
 }
 
 .movies_title {
-  font-style: normal;
   font-weight: 900;
   font-size: 32px;
   line-height: 38px;
@@ -233,14 +229,12 @@ main {
 }
 
 .rating-text {
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
   color: #e3b100;
 }
 .movie_item_info_header_year {
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
@@ -248,7 +242,6 @@ main {
 }
 
 .movie_item_info_series {
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
@@ -257,7 +250,6 @@ main {
 }
 
 .movie_item_info_name {
-  font-style: normal;
   font-weight: 900;
   font-size: 18px;
   line-height: 22px;
@@ -266,7 +258,6 @@ main {
 }
 
 .movie_item_info_description {
-  font-style: normal;
   font-weight: 400;
   font-size: 11px;
   line-height: 13px;
@@ -296,16 +287,130 @@ main {
   margin-top: 2px;
 }
 .watch-wrapper-text {
-  font-style: normal;
   font-weight: 700;
   font-size: 13px;
   line-height: 16px;
   color: #ffffff;
 }
 
-.test {
-  width: 140px;
-  height: 140px;
-  background-position: #ff0000;
-  font-size: 2rem;
+/*SUBSCRIPTION*/
+.subscription {
+  margin: 81px 0 32px;
+}
+.subscription_title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 38px;
+  color: #ffffff;
+  padding-bottom: 24px;
+}
+
+.card-list {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.one {
+  z-index: 0;
+  left: 8%;
+}
+.one:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(-90deg, #000000 0%, rgba(13, 0, 123, 0.25) 100%);
+}
+.card-active {
+  z-index: 100;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 89, 193, 0.5),
+      rgba(0, 89, 193, 0.5)
+    ),
+    linear-gradient(90deg, rgba(0, 89, 193, 0.5) 0%, rgba(13, 0, 123, 0.5) 100%);
+
+  border: 1px solid rgba(0, 89, 193, 0.5);
+}
+.three {
+  z-index: 0;
+  right: 8%;
+}
+.three:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, #000000 0%, rgba(13, 0, 123, 0.25) 100%);
+}
+.card-item {
+  position: relative;
+  width: 502px;
+  height: 296px;
+  border-radius: 12px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.card-title {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 36px;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.options-list {
+  padding-left: 15px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.options-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.btn-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 10px;
+}
+
+.btn {
+  width: 147px;
+  height: 40px;
+  border-radius: 12px;
+  border: 1px solid #e38b00;
+  border-radius: 12px;
+  background: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0 0 10px 0 rgba(227, 177, 0) inset,
+    0 0 10px 2px rgb(229, 203, 110);
+  transition: all 0.3s ease-out;
+}
+.btn-activ {
+  background: rgba(227, 139, 0, 1);
 }
