@@ -175,21 +175,21 @@ main {
   display: flex;
   flex-direction: row;
   gap: 24px;
-  position: absolute;
+  /* position: absolute; */
 }
 
 .movie_item {
-  width: 210px;
-  height: 300px;
+  /* width: 210px;
+  height: 300px; */
   cursor: pointer;
   position: relative;
 }
 
-
 .movie_item_img {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 210px;
+  height: 300px;
+
   background: #d9d9d9;
   border-radius: 12px;
   position: relative;
@@ -204,7 +204,7 @@ main {
 
 /*поэтому не работает ховер при наведении на кнопку-_-*/
 .movie_item_img:hover + .movie_item_info {
-  z-index: 2;  
+  z-index: 2;
   transition: all 0.3s ease-out;
 }
 
@@ -301,4 +301,11 @@ main {
   font-size: 13px;
   line-height: 16px;
   color: #ffffff;
+}
+
+.test {
+  width: 140px;
+  height: 140px;
+  background-position: #ff0000;
+  font-size: 2rem;
 }
