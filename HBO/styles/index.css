@@ -4,6 +4,10 @@ body {
   color: rgba(255, 255, 255, 1);
   font-family: "Lato", sans-serif;
   font-style: normal;
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
 }
 
 main {
@@ -15,9 +19,12 @@ main {
   margin: 24px auto 32px;
 }
 
+.flex {
+  display: flex;
+}
+
 /*HEADER*/
 .header {
-  display: flex;
   justify-content: space-between;
 }
 
@@ -33,18 +40,15 @@ main {
 }
 
 .nav-menu {
-  display: flex;
   align-items: center;
   gap: 115px;
 }
 
 .wrapper-left {
-  display: flex;
   gap: 43px;
 }
 
 .wrapper-right {
-  display: flex;
   gap: 59px;
 }
 
@@ -65,8 +69,6 @@ main {
   background: #0059c1;
   border-radius: 12px;
   font-weight: 700;
-  font-size: 15px;
-  line-height: 18px;
   color: #ffffff;
   cursor: pointer;
 }
@@ -85,7 +87,6 @@ main {
   min-height: 595px;
   position: relative;
   z-index: 1;
-  display: flex;
   justify-content: end;
   flex-direction: column;
 }
@@ -126,7 +127,6 @@ main {
 
 .slider-play {
   margin: 0 auto;
-  display: flex;
   gap: 10px;
   padding-top: 20px;
 }
@@ -148,8 +148,6 @@ main {
 }
 .slider-play_text {
   font-weight: 400;
-  font-size: 15px;
-  line-height: 18px;
   align-items: center;
   display: flex;
 }
@@ -168,15 +166,11 @@ main {
 }
 
 .movies_list {
-  display: flex;
   flex-direction: row;
   gap: 24px;
-  /* position: absolute; */
 }
 
 .movie_item {
-  /* width: 210px;
-  height: 300px; */
   cursor: pointer;
   position: relative;
 }
@@ -185,7 +179,6 @@ main {
   position: relative;
   width: 210px;
   height: 300px;
-
   background: #d9d9d9;
   border-radius: 12px;
   position: relative;
@@ -213,14 +206,12 @@ main {
 }
 
 .movie_item_info_header {
-  display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-bottom: 56px;
 }
 
 .rating_box {
-  display: flex;
   gap: 6.5px;
 }
 .rating-icon {
@@ -229,20 +220,17 @@ main {
 }
 
 .rating-text {
-  font-weight: 500;
   font-size: 12px;
   line-height: 14px;
   color: #e3b100;
 }
 .movie_item_info_header_year {
-  font-weight: 500;
   font-size: 12px;
   line-height: 14px;
   color: rgba(255, 255, 255, 0.5);
 }
 
 .movie_item_info_series {
-  font-weight: 500;
   font-size: 14px;
   line-height: 17px;
   color: rgba(255, 255, 255, 0.5);
@@ -271,7 +259,6 @@ main {
   background: #0059c1;
   border-radius: 12px;
   cursor: pointer;
-  display: flex;
   justify-content: space-between;
   padding: 11px 15px;
 }
@@ -307,7 +294,6 @@ main {
 
 .card-list {
   position: relative;
-  display: flex;
   justify-content: center;
 }
 
@@ -355,6 +341,7 @@ main {
   background: linear-gradient(90deg, #000000 0%, rgba(13, 0, 123, 0.25) 100%);
 }
 .card-item {
+  cursor: pointer;
   position: relative;
   width: 502px;
   height: 296px;
@@ -376,20 +363,17 @@ main {
 .options-list {
   padding-left: 15px;
   gap: 16px;
-  display: flex;
   flex-direction: column;
   margin: 0;
 }
 
 .options-item {
-  font-weight: 500;
   font-size: 16px;
   line-height: 19px;
   color: #ffffff;
 }
 
 .btn-box {
-  display: flex;
   flex-direction: row;
   justify-content: end;
   gap: 10px;
@@ -404,6 +388,10 @@ main {
   background: none;
   color: #fff;
   cursor: pointer;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 22px;
+  text-align: center;
 }
 
 .btn:hover {
