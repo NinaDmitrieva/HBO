@@ -169,11 +169,17 @@ main {
 .movies_list {
   flex-direction: row;
   gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+.movies_list::-webkit-scrollbar {
+  width: 0;
 }
 
 .movie_item {
   cursor: pointer;
   position: relative;
+  scroll-snap-align: start;
 }
 
 .movie_item_img {
@@ -298,11 +304,10 @@ main {
   justify-content: center;
 }
 
-.one {
-  z-index: 0;
+.item-left {
   left: 8%;
 }
-.one:before {
+.item-left::before {
   content: "";
   display: block;
   width: 100%;
@@ -312,8 +317,9 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(-90deg, #000000 0%, rgba(13, 0, 123, 0.25) 100%);
+   background: linear-gradient(-90deg, #000000 0%, rgba(13, 0, 123, 0.25) 100%); 
 }
+
 .card-active {
   z-index: 100;
   background: linear-gradient(
@@ -325,11 +331,11 @@ main {
 
   border: 1px solid rgba(0, 89, 193, 0.5);
 }
-.three {
-  z-index: 0;
+.item-right {
   right: 8%;
 }
-.three:before {
+
+.item-right::before {
   content: "";
   display: block;
   width: 100%;
@@ -339,7 +345,7 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(90deg, #000000 0%, rgba(13, 0, 123, 0.25) 100%);
+  background: linear-gradient(90deg, #000000 0%, rgba(13, 0, 123, 0.25) 100%); 
 }
 .card-item {
   cursor: pointer;
