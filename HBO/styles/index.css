@@ -29,7 +29,7 @@ main {
   justify-content: space-between;
 }
 
-.logo {
+.header-logo {
   width: 100px;
   height: 40.56px;
   cursor: pointer;
@@ -40,20 +40,20 @@ main {
   transition: all 0.3s ease-out;
 }
 
-.nav-menu {
+.header-menu {
   align-items: center;
   gap: 115px;
 }
 
-.wrapper-left {
+.header-menu__wrapper-left {
   gap: 43px;
 }
 
-.wrapper-right {
+.header-menu__wrapper-right {
   gap: 59px;
 }
 
-.wrapper-item {
+.header-menu__item {
   color: rgba(255, 255, 255, 0.75);
   font-weight: 400;
   font-size: 13px;
@@ -84,7 +84,7 @@ main {
 }
 
 .slider-img {
-  background-image: url(../img/contentIMG.png);
+  background: url(../img/contentIMG.png) no-repeat;
   min-height: 595px;
   position: relative;
   z-index: 1;
