@@ -162,7 +162,8 @@ main {
 }
 
 .slider-play__btn-icon {
-  background: url(../img/icon/playICON.png) no-repeat 60%/12px 14px  rgba(255, 255, 255, 0.1);
+  background: url(../img/icon/playICON.png) no-repeat 60%/12px 14px
+    rgba(255, 255, 255, 0.1);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -183,7 +184,7 @@ main {
 
 /*MOVIES*/
 .movies {
- padding-left: 120px;
+  padding-left: 120px;
   margin: 0 auto;
   padding-top: 32px;
   position: relative;
@@ -212,15 +213,7 @@ main {
   cursor: pointer;
   position: relative;
   scroll-snap-align: start;
-
 }
-/* .movie-item:hover{
-  background: rgba(255, 255, 255, 0.15);
-  filter: blur(5px);
-  transition: all 0.3s ease-out;
-
-} */
-
 
 .movie-item__img {
   position: relative;
@@ -228,24 +221,26 @@ main {
   height: 300px;
   background: #d9d9d9;
   border-radius: 12px;
-  position: relative;
 
 }
 
 .movie-item__info {
   position: absolute;
   width: 100%;
-  top: 20px;
-  padding: 0 20px 20px;
- opacity: 0; 
-
+  height: 100%;
+  top: 1px;
+  padding: 20px 20px 20px;
+  opacity: 0;
+  border-radius: 12px;
 }
-.movie-item__info:hover{
- opacity: 1;
+
+.movie-item__info:hover {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
   transition: all 0.3s ease-out;
-
-
+  opacity: 1;
 }
+
 .movie-item__info-header {
   flex-direction: row;
   justify-content: space-between;
