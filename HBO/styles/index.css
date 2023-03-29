@@ -169,7 +169,7 @@ main {
   border-radius: 50%;
 }
 .slider-play__btn:hover {
-opacity: 0.7;
+  opacity: 0.7;
   transition: all 0.3s ease-out;
 }
 .slider-play__btn-text {
@@ -430,11 +430,11 @@ opacity: 0.7;
   background: none;
   color: #fff;
   cursor: pointer;
-font-family: 'Lato';
-font-style: normal;
-font-weight: 900;
-font-size: 18px;
-line-height: 22px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22px;
   text-align: center;
 }
 
