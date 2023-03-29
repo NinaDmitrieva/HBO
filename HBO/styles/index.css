@@ -16,7 +16,6 @@ main {
 }
 
 .page {
-  width: 1276px;
   margin: 24px auto 32px;
 }
 
@@ -26,10 +25,14 @@ main {
 
 /*HEADER*/
 .header {
+  width: 1274px;
+  margin: 0 auto;
+
   justify-content: space-between;
+  padding-top: 3px;
 }
 
-.logo {
+.header-logo {
   width: 100px;
   height: 40.56px;
   cursor: pointer;
@@ -40,20 +43,20 @@ main {
   transition: all 0.3s ease-out;
 }
 
-.nav-menu {
+.header-menu {
   align-items: center;
   gap: 115px;
 }
 
-.wrapper-left {
+.header-menu__wrapper-left {
   gap: 43px;
 }
 
-.wrapper-right {
+.header-menu__wrapper-right {
   gap: 59px;
 }
 
-.wrapper-item {
+.header-menu__item {
   color: rgba(255, 255, 255, 0.75);
   font-weight: 400;
   font-size: 13px;
@@ -72,6 +75,12 @@ main {
   font-weight: 700;
   color: #ffffff;
   cursor: pointer;
+
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
 }
 .signin:hover {
   background: #1274e5;
@@ -80,11 +89,14 @@ main {
 
 /*SLIDER SECTION*/
 .slider {
-  padding-top: 36px;
+  width: 1274px;
+  margin: 0 auto;
+  padding-top: 23px;
+  position: relative;
 }
 
 .slider-img {
-  background-image: url(../img/contentIMG.png);
+  background: url(../img/contentIMG.png) no-repeat;
   min-height: 595px;
   position: relative;
   z-index: 1;
@@ -104,121 +116,141 @@ main {
 
 .slider-box {
   margin: 0 auto;
+  justify-content: center;
+  position: absolute;
+  right: 24.5%;
+  top: 58%;
 }
 
-.slider-box-logo {
+.slider-box__logo {
   width: 658px;
 }
 
 .slider-scrollLine {
+  position: relative;
   width: 500px;
-  margin-top: 30px;
+  padding-top: 24px;
+  margin: 0 auto;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   cursor: pointer;
 }
-
-/*возможно тут стоит сделать через лейбл и инпут, тогда при выборе части полосы прокрутки мы будем попадать на нужный слайд */
-/*если через checkbox, то checked - мы убираем дисплей блок с картинки и показываем ее*/
-.slider-scrollLine::before {
-  content: "";
+.slider-scrollLine:hover {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease-out;
+}
+.slider-scrollLine__activ {
   border-bottom: 1px solid rgba(227, 177, 0, 1);
   width: 100px;
   position: absolute;
 }
-
-.slider-play {
-  margin: 0 auto;
-  gap: 10px;
-  padding-top: 20px;
+.slider-scrollLine__activ:hover {
+  opacity: 0.8;
+  transition: all 0.3s ease-out;
 }
-.slider-play_btn {
-  width: 40px;
-  height: 40px;
-  background: url(../img/icon/playICON.png) no-repeat 50%/11.9px 14.9px
+
+.slider-play__btn {
+  margin: 0 auto;
+  width: 198px;
+  cursor: pointer;
+  background: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 18px;
+}
+
+.slider-play__btn-icon {
+  background: url(../img/icon/playICON.png) no-repeat 60%/12px 14px
     rgba(255, 255, 255, 0.1);
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  cursor: pointer;
 }
-
-.slider-play_btn:hover {
-  box-shadow: 0 0 10px 0 rgba(227, 177, 0) inset,
-    0 0 10px 2px rgb(229, 203, 110);
+.slider-play__btn:hover {
+  opacity: 0.7;
   transition: all 0.3s ease-out;
 }
-.slider-play_text {
+.slider-play__btn-text {
+  font-family: "Lato";
+  font-style: normal;
   font-weight: 400;
-  align-items: center;
-  display: flex;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(255, 255, 255, 1);
 }
 
 /*MOVIES*/
 .movies {
+  padding-left: 120px;
+  margin: 0 auto;
   padding-top: 32px;
   position: relative;
 }
 
-.movies_title {
+.movies-title {
   font-weight: 900;
   font-size: 32px;
   line-height: 38px;
   padding-bottom: 24px;
 }
 
-.movies_list {
+.movies-list {
+  display: flex;
+  flex-wrap: nowrap;
   flex-direction: row;
   gap: 24px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
 }
-.movies_list::-webkit-scrollbar {
+.movies-list::-webkit-scrollbar {
   width: 0;
 }
 
-.movie_item {
+.movie-item {
   cursor: pointer;
   position: relative;
   scroll-snap-align: start;
 }
 
-.movie_item_img {
+.movie-item__img {
   position: relative;
   width: 210px;
   height: 300px;
   background: #d9d9d9;
   border-radius: 12px;
-  position: relative;
-  z-index: 1;
-}
-.movie_item_img:hover {
-  background: rgba(255, 255, 255, 0.15);
-  filter: blur(5px);
-  transition: all 0.3s ease-out;
-  z-index: 0;
 }
 
-/*поэтому не работает ховер при наведении на кнопку-_-*/
-.movie_item_img:hover + .movie_item_info {
-  z-index: 2;
-  transition: all 0.3s ease-out;
-}
-
-.movie_item_info {
+.movie-item__info {
   position: absolute;
   width: 100%;
-  top: 20px;
-  padding: 0 20px 20px;
-  z-index: 0;
+  height: 100%;
+  top: 1px;
+  padding: 20px 20px 20px;
+  opacity: 0;
+  border-radius: 12px;
 }
 
-.movie_item_info_header {
+.movie-item__info:hover {
+  background: rgba(
+    0,
+    0,
+    0,
+    0.15
+  ); /*сделала фон темене, что б лучше был виден таекст на белых фонах*/
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease-out;
+  opacity: 1;
+}
+
+.movie-item__info-header {
   flex-direction: row;
   justify-content: space-between;
   padding-bottom: 56px;
 }
 
-.rating_box {
+.rating-box {
   gap: 6.5px;
 }
 .rating-icon {
@@ -231,20 +263,20 @@ main {
   line-height: 14px;
   color: #e3b100;
 }
-.movie_item_info_header_year {
+.movie-item__info-header__year {
   font-size: 12px;
   line-height: 14px;
   color: rgba(255, 255, 255, 0.5);
 }
 
-.movie_item_info_series {
+.movie-item__info-series {
   font-size: 14px;
   line-height: 17px;
   color: rgba(255, 255, 255, 0.5);
   padding-bottom: 7px;
 }
 
-.movie_item_info_name {
+.movie-item__info-name {
   font-weight: 900;
   font-size: 18px;
   line-height: 22px;
@@ -252,7 +284,7 @@ main {
   padding-bottom: 6px;
 }
 
-.movie_item_info_description {
+.movie-item__info-description {
   font-weight: 400;
   font-size: 11px;
   line-height: 13px;
@@ -275,12 +307,12 @@ main {
     0 0 10px 2px rgb(229, 203, 110);
   transition: all 0.3s ease-out;
 }
-.watch-wrapper-playIcon {
+.watch-wrapper__playIcon {
   width: 10.27px;
   height: 12.36px;
   margin-top: 2px;
 }
-.watch-wrapper-text {
+.watch-wrapper__text {
   font-weight: 700;
   font-size: 13px;
   line-height: 16px;
@@ -289,7 +321,8 @@ main {
 
 /*SUBSCRIPTION*/
 .subscription {
-  margin: 81px 0 32px;
+  margin: 81px auto 32px;
+  width: 1274px;
 }
 .subscription_title {
   font-weight: 900;
@@ -317,7 +350,8 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
-   background: linear-gradient(-90deg, #000000 0%, rgba(13, 0, 123, 0.25) 100%); 
+  background: linear-gradient(-90deg, #000000 0%, rgba(13, 0, 123, 0.25) 100%);
+  border-radius: 12px;
 }
 
 .card-active {
@@ -345,7 +379,8 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(90deg, #000000 0%, rgba(13, 0, 123, 0.25) 100%); 
+  background: linear-gradient(90deg, #000000 0%, rgba(13, 0, 123, 0.25) 100%);
+  border-radius: 12px;
 }
 .card-item {
   cursor: pointer;
@@ -395,8 +430,10 @@ main {
   background: none;
   color: #fff;
   cursor: pointer;
-  font-size: 18px;
+  font-family: "Lato";
+  font-style: normal;
   font-weight: 900;
+  font-size: 18px;
   line-height: 22px;
   text-align: center;
 }
