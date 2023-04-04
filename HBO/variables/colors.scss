@@ -1,0 +1,62 @@
+//описательные цвета
+//НЕ ДЛЯ ИСПОЛЬЗОВАНИЯ В КОДЕ
+$_white: #fff;
+$_black: #000;
+$_light: rgba(255, 255, 255, 1);
+
+$_light-grey-opacity: rgba(255, 255, 255, 0.75);
+$_light-grey: rgba(255, 255, 255, 1);
+$_grey: rgba(255, 255, 255, 0.5);
+$_dark-grey: rgba(255, 255, 255, 0.15);
+
+$_blue: #0059c1;
+$_blue-opacity: #1274e5;
+$_dark-blue: rgba(0, 89, 193, 0.5);
+
+$_blue-gradient: linear-gradient(180deg, rgba(0, 0, 0, 0) 63.19%, #000000 100%);
+$_dark-blue-gradient: linear-gradient(
+  -90deg,
+  #000000 0%,
+  rgba(13, 0, 123, 0.25) 100%
+);
+$_light-blue-gradient: linear-gradient(
+  0deg,
+  rgba(0, 89, 193, 0.5),
+  rgba(0, 89, 193, 0.5)
+);
+$_mix-light-blue-gradient: linear-gradient(
+  90deg,
+  rgba(0, 89, 193, 0.5) 0%,
+  rgba(13, 0, 123, 0.5) 100%
+);
+$_mix-dark-blue-gradient: linear-gradient(
+  90deg,
+  #000000 0%,
+  rgba(13, 0, 123, 0.25) 100%
+);
+
+$_yellow: rgba(227, 177, 0, 1);
+$_light-yellow: rgba(227, 177, 0);
+$_light-yellow-opacity: rgb(229, 203, 110);
+$_dark-yellow: #e3b100;
+
+$_silver: #d9d9d9;
+$_light-silver: #e8e8e8;
+$_bright-yellow: rgba(227, 139, 0, 1);
+
+//функциональные цвета
+//ДЛЯ ИСПОЛЬЗОВАНИЯ В КОДЕ
+$color__primary: $_light;
+$color_secondary: $_white;
+
+$bg-color_accent: $_black;
+// $bg-color_accent_secondary:;
+
+// $bg-color_disabled:;
+// $bg-color_activ: ;
+// $bg-color_hover:;
+
+// $font-color__primary: ;
+// $font-color__secondary:;
+// $font-color__accent:;
+// $font-color__disabled: ;
