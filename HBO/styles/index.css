@@ -1,5 +1,5 @@
 body {
-  max-width: 1920px;
+  /* max-width: 1920px; */
   background: #000;
   color: rgba(255, 255, 255, 1);
   font-family: "Lato", sans-serif;
@@ -25,7 +25,7 @@ main {
 
 /*HEADER*/
 .header {
-  width: 1274px;
+  max-width: 1274px;
   margin: 0 auto;
 
   justify-content: space-between;
@@ -33,7 +33,7 @@ main {
 }
 
 .header-logo {
-  width: 100px;
+  max-width: 100px;
   height: 40.56px;
   cursor: pointer;
 }
@@ -88,7 +88,7 @@ main {
 
 /*SLIDER SECTION*/
 .slider {
-  width: 1274px;
+  max-width: 1274px;
   margin: 0 auto;
   padding-top: 23px;
   position: relative;
@@ -182,7 +182,8 @@ main {
 
 /*MOVIES*/
 .movies {
-  padding-left: 120px;
+  max-width: 1848px;
+  padding-left: 287px;
   margin: 0 auto;
   padding-top: 32px;
   position: relative;
@@ -320,7 +321,7 @@ main {
 
 /*SUBSCRIPTION*/
 .subscription {
-  margin: 81px auto 32px;
+  margin: 60px auto 32px;
   width: 1274px;
 }
 .subscription_title {
@@ -337,7 +338,7 @@ main {
 }
 
 .item-left {
-  left: 8%;
+  left: 9%;
 }
 .item-left::before {
   content: "";
@@ -365,7 +366,7 @@ main {
   border: 1px solid rgba(0, 89, 193, 0.5);
 }
 .item-right {
-  right: 8%;
+  right: 9%;
 }
 
 .item-right::before {
