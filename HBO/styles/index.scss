@@ -1,2 +1,6 @@
-@import "../variables/res.css";
-@import "../variables/base.scss"
+@import "../variables/res.css"; //сброс стилей
+@import "../variables/base.scss";//базовые переменные
+
+
+@import "../sections/header.scss";
+@import "../sections/signin.scss";

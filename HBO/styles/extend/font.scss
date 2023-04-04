@@ -1,0 +1,12 @@
+@import "../../variables/typography.scss";
+
+%font-h1 {
+  font-weight: $font-weight_l;
+  font-size: $font-size_l;
+  line-height: $line-height_l;
+}
+%font-h2 {
+  font-weight: $font-weight_m;
+  font-size: $font-size_l-2;
+  line-height: $line-height_l-2;
+}

@@ -1,0 +1,19 @@
+@import "../styles/extend/hover.scss";
+@import "../variables/typography.scss";
+@import "../variables/colors.scss";
+@import "../styles/extend/font.scss";
+
+.signin {
+  width: 100%;
+  padding-top: 50px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  &__title {
+    @extend %font-h1;
+  }
+  &__subtitle{
+   @extend %font-h2; 
+  }
+}

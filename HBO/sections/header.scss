@@ -1,0 +1,54 @@
+@import "../styles/extend/hover.scss";
+@import "../variables/typography.scss";
+@import "../variables/colors.scss";
+
+/*HEADER*/
+.header {
+  justify-content: space-between;
+}
+
+.logo {
+  width: 100px;
+  height: 40.56px;
+  &:hover {
+    @extend %hover-effect;
+  }
+}
+
+.nav-menu {
+  align-items: center;
+  gap: 115px;
+}
+
+.wrapper-left {
+  gap: 43px;
+}
+
+.wrapper-right {
+  gap: 59px;
+}
+
+.wrapper-item {
+  color: $font-color__primary;
+  font-weight: $font-weight_s;
+  font-size: $font-size_s;
+  line-height: $font-size_m-2;
+
+  &:hover {
+    @extend %hover-effect-nav-item;
+  }
+}
+
+.signin__btn {
+  width: 121px;
+  height: 40px;
+  background: $btn-bg-color__primary;
+  border-radius: 12px;
+  font-weight: 700;
+  color: $color_secondary;
+
+  &:hover{
+    @extend %hover-effect-signin-btn;
+  }
+}
+

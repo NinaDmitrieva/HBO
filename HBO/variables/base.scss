@@ -1,16 +1,16 @@
 @import "./colors.scss";
+@import "./typography.scss";
 
 body {
   max-width: 1920px;
   background: $bg-color_accent;
-  // color: $color__primary;
- // background: black;
-  
-  // font-family: $font-family_default;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 18px;
+  color: $color__primary;
+
+ font-family: $font-family_default;
+font-style: $font-style_default;
+  // font-weight: $font-weight_default;
+  // font-size: $font-size_m;
+  // line-height: $line-height_mlx;
   margin: 0 auto;
 }
 

@@ -1,4 +1,4 @@
-body {
+/* body {
   max-width: 1920px;
   background: #000;
   color: rgba(255, 255, 255, 1);
@@ -22,9 +22,9 @@ main {
 
 .flex {
   display: flex;
-}
+} */
 
-/*HEADER*/
+/* HEADER
 .header {
   justify-content: space-between;
 }
@@ -76,7 +76,7 @@ main {
 .signin:hover {
   background: #1274e5;
   transition: all 0.3s ease-out;
-}
+} */
 
 /*SLIDER SECTION*/
 .slider {

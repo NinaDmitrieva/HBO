@@ -4,8 +4,8 @@ $_white: #fff;
 $_black: #000;
 $_light: rgba(255, 255, 255, 1);
 
-$_light-grey-opacity: rgba(255, 255, 255, 0.75);
-$_light-grey: rgba(255, 255, 255, 1);
+$_light-grey: rgba(255, 255, 255, 0.75);
+$_light-grey-opacity: rgba(255, 255, 255, 1);
 $_grey: rgba(255, 255, 255, 0.5);
 $_dark-grey: rgba(255, 255, 255, 0.15);
 
@@ -56,7 +56,10 @@ $bg-color_accent: $_black;
 // $bg-color_activ: ;
 // $bg-color_hover:;
 
-// $font-color__primary: ;
+$font-color__primary: $_light-grey;
 // $font-color__secondary:;
 // $font-color__accent:;
-// $font-color__disabled: ;
+$font-color__hover: $_light-grey-opacity;
+
+$btn-bg-color__primary: $_blue;
+$btn-bg-color__hover: $_blue-opacity;

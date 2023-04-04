@@ -1,0 +1,20 @@
+@import "../../variables/colors.scss";
+
+%hover-effect {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.3s ease-out;
+}
+
+%hover-effect-nav-item {
+  cursor: pointer;
+  opacity: 0.5;
+  color: $font-color__hover;
+  transition: all 0.3s ease-out;
+}
+
+%hover-effect-signin-btn {
+  cursor: pointer;
+  background: $btn-bg-color__hover;
+  transition: all 0.3s ease-out;
+}
