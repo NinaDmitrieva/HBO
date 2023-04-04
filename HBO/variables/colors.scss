@@ -13,7 +13,7 @@ $_blue: #0059c1;
 $_blue-opacity: #1274e5;
 $_dark-blue: rgba(0, 89, 193, 0.5);
 
-$_blue-gradient: linear-gradient(180deg, rgba(0, 0, 0, 0) 63.19%, #000000 100%);
+$_dark-gradient: linear-gradient(180deg, rgba(0, 0, 0, 0) 63.19%, #000000 100%);
 $_dark-blue-gradient: linear-gradient(
   -90deg,
   #000000 0%,
@@ -48,9 +48,10 @@ $_bright-yellow: rgba(227, 139, 0, 1);
 //ДЛЯ ИСПОЛЬЗОВАНИЯ В КОДЕ
 $color__primary: $_light;
 $color_secondary: $_white;
+$color_accent: $_grey;
 
 $bg-color_accent: $_black;
-// $bg-color_accent_secondary:;
+$bg-color_accent_secondary: $_dark-gradient;
 
 // $bg-color_disabled:;
 // $bg-color_activ: ;
@@ -63,3 +64,5 @@ $font-color__hover: $_light-grey-opacity;
 
 $btn-bg-color__primary: $_blue;
 $btn-bg-color__hover: $_blue-opacity;
+
+$item-color-active: $_yellow;

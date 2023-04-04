@@ -18,3 +18,15 @@
   background: $btn-bg-color__hover;
   transition: all 0.3s ease-out;
 }
+
+%hover-effect-slider-scrollLine {
+  cursor: pointer;
+  border-bottom: 2px solid $color_accent;
+  transition: all 0.3s ease-out;
+}
+
+%hover-effect-item-active {
+  opacity: 0.8;
+  transition: all 0.3s ease-out;
+}
+

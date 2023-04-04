@@ -1,16 +1,21 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/res.css" />
-    <link rel="stylesheet" href="./styles/index.css" />
+    <!-- <link rel="stylesheet" href="./styles/res.css" /> -->
+    <link rel="stylesheet" href="/styles/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
+    />
+    <link
+      type="image/x-icon"
+      href="./img/icon/favicons.png"
+      rel="shortcut icon"
     />
 
     <title>HBO</title>
@@ -30,7 +35,7 @@
             <a class="wrapper-item" href="#">SCHEDULE</a>
           </div>
         </div>
-        <button class="signin">SIGN IN</button>
+        <button class="signin__btn">SIGN IN</button>
       </header>
 
       <main>
@@ -41,253 +46,256 @@
             alt="lastOfUs"
           >
             <div class="slider-box">
-              <img class="slider-box-logo" src="./img/sliderLogo.png" />
-              <hr class="slider-scrollLine" />
+              <img class="slider-box__logo" src="./img/sliderLogo.png" />
+              <div class="slider-scrollLine">
+                <div class="slider-scrollLine__activ"></div>
+              </div>
             </div>
-            <div class="slider-play flex">
-              <button class="slider-play_btn"></button>
-              <p class="slider-play_text">WATCH THE TRAILER</p>
-            </div>
+
+            <button class="slider-play__btn">
+              <span class="slider-play__btn-icon"> </span>
+              <p class="slider-play__btn-text">WATCH THE TRAILER</p>
+            </button>
           </div>
         </section>
 
-        <section class="movies">
-          <h1 class="movies_title">HBO Original</h1>
-          <div class="movies_list flex">
-            <div class="movie_item">
+         <section class="movies">
+          <h1 class="movies-title">HBO Original</h1>
+          <div class="movies-list flex">
+            <div class="movie-item">
               <img
-                class="movie_item_img"
+                class="movie-item__img"
                 src="./img/filmitem7.png"
-                alt="фильм"
+                alt="film"
               />
 
-              <div class="movie_item_info">
-                <div class="movie_item_info_header flex">
-                  <div class="rating_box flex">
+              <div class="movie-item__info">
+                <div class="movie-item__info-header flex">
+                  <div class="rating-box flex">
                     <img class="rating-icon" src="./img/icon/starICON.png" />
                     <p class="rating-text">8.1</p>
                   </div>
 
-                  <p class="movie_item_info_header_year">2022</p>
+                  <p class="movie-item__info-header__year">2022</p>
                 </div>
 
-                <p class="movie_item_info_series">Season 1</p>
-                <h2 class="movie_item_info_name">House of the Dragon</h2>
-                <p class="movie_item_info_description">
+                <p class="movie-item__info-series">Season 1</p>
+                <h2 class="movie-item__info-name">House of the Dragon</h2>
+                <p class="movie-item__info-description">
                   An internal succession war within House Targaryen at the
                   height of its power, 172 years before the birth of Daenerys
                   Targaryen.
                 </p>
                 <div class="watch-wrapper flex">
                   <img
-                    class="watch-wrapper-playIcon"
+                    class="watch-wrapper__playIcon"
                     src="./img/icon/playICON.png"
                   />
-                  <p class="watch-wrapper-text">WATCH</p>
+                  <p class="watch-wrapper__text">WATCH</p>
                 </div>
               </div>
             </div>
 
-            <div class="movie_item">
+            <div class="movie-item">
               <img
-                class="movie_item_img"
+                class="movie-item__img"
                 src="./img/filmitem.png"
-                alt="фильм"
+                alt="film"
               />
 
-              <div class="movie_item_info">
-                <div class="movie_item_info_header flex">
-                  <div class="rating_box flex">
+              <div class="movie-item__info">
+                <div class="movie-item__info-header flex">
+                  <div class="rating-box flex">
                     <img class="rating-icon" src="./img/icon/starICON.png" />
                     <p class="rating-text">8.1</p>
                   </div>
 
-                  <p class="movie_item_info_header_year">2022</p>
+                  <p class="movie-item__info-header__year">2022</p>
                 </div>
 
-                <p class="movie_item_info_series">Season 1</p>
-                <h2 class="movie_item_info_name">House of the Dragon</h2>
-                <p class="movie_item_info_description">
+                <p class="movie-item__info-series">Season 1</p>
+                <h2 class="movie-item__info-name">House of the Dragon</h2>
+                <p class="movie-item__info-description">
                   An internal succession war within House Targaryen at the
                   height of its power, 172 years before the birth of Daenerys
                   Targaryen.
                 </p>
                 <div class="watch-wrapper flex">
                   <img
-                    class="watch-wrapper-playIcon"
+                    class="watch-wrapper__playIcon"
                     src="./img/icon/playICON.png"
                   />
-                  <p class="watch-wrapper-text">WATCH</p>
+                  <p class="watch-wrapper__text">WATCH</p>
                 </div>
               </div>
             </div>
 
-            <div class="movie_item">
+            <div class="movie-item">
               <img
-                class="movie_item_img"
+                class="movie-item__img"
                 src="./img/filmitem3.png"
-                alt="фильм"
+                alt="film"
               />
 
-              <div class="movie_item_info">
-                <div class="movie_item_info_header flex">
-                  <div class="rating_box flex">
+              <div class="movie-item__info">
+                <div class="movie-item__info-header flex">
+                  <div class="rating-box flex">
                     <img class="rating-icon" src="./img/icon/starICON.png" />
                     <p class="rating-text">8.1</p>
                   </div>
 
-                  <p class="movie_item_info_header_year">2022</p>
+                  <p class="movie-item__info-header__year">2022</p>
                 </div>
 
-                <p class="movie_item_info_series">Season 1</p>
-                <h2 class="movie_item_info_name">House of the Dragon</h2>
-                <p class="movie_item_info_description">
+                <p class="movie-item__info-series">Season 1</p>
+                <h2 class="movie-item__info-name">House of the Dragon</h2>
+                <p class="movie-item__info-description">
                   An internal succession war within House Targaryen at the
                   height of its power, 172 years before the birth of Daenerys
                   Targaryen.
                 </p>
                 <div class="watch-wrapper flex">
                   <img
-                    class="watch-wrapper-playIcon"
+                    class="watch-wrapper__playIcon"
                     src="./img/icon/playICON.png"
                   />
-                  <p class="watch-wrapper-text">WATCH</p>
+                  <p class="watch-wrapper__text">WATCH</p>
                 </div>
               </div>
             </div>
 
-            <div class="movie_item">
+            <div class="movie-item">
               <img
-                class="movie_item_img"
+                class="movie-item__img"
                 src="./img/filmitem5.png"
-                alt="фильм"
+                alt="film"
               />
 
-              <div class="movie_item_info">
-                <div class="movie_item_info_header flex">
-                  <div class="rating_box flex">
+              <div class="movie-item__info">
+                <div class="movie-item__info-header flex">
+                  <div class="rating-box flex">
                     <img class="rating-icon" src="./img/icon/starICON.png" />
                     <p class="rating-text">8.1</p>
                   </div>
 
-                  <p class="movie_item_info_header_year">2022</p>
+                  <p class="movie-item__info-header__year">2022</p>
                 </div>
 
-                <p class="movie_item_info_series">Season 1</p>
-                <h2 class="movie_item_info_name">House of the Dragon</h2>
-                <p class="movie_item_info_description">
+                <p class="movie-item__info-series">Season 1</p>
+                <h2 class="movie-item__info-name">House of the Dragon</h2>
+                <p class="movie-item__info-description">
                   An internal succession war within House Targaryen at the
                   height of its power, 172 years before the birth of Daenerys
                   Targaryen.
                 </p>
                 <div class="watch-wrapper flex">
                   <img
-                    class="watch-wrapper-playIcon"
+                    class="watch-wrapper__playIcon"
                     src="./img/icon/playICON.png"
                   />
-                  <p class="watch-wrapper-text">WATCH</p>
+                  <p class="watch-wrapper__text">WATCH</p>
                 </div>
               </div>
             </div>
 
-            <div class="movie_item">
+            <div class="movie-item">
               <img
-                class="movie_item_img"
+                class="movie-item__img"
                 src="./img/filmitem6.png"
-                alt="фильм"
+                alt="film"
               />
 
-              <div class="movie_item_info">
-                <div class="movie_item_info_header flex">
-                  <div class="rating_box flex">
+              <div class="movie-item__info">
+                <div class="movie-item__info-header flex">
+                  <div class="rating-box flex">
                     <img class="rating-icon" src="./img/icon/starICON.png" />
                     <p class="rating-text">8.1</p>
                   </div>
 
-                  <p class="movie_item_info_header_year">2022</p>
+                  <p class="movie-item__info-header__year">2022</p>
                 </div>
 
-                <p class="movie_item_info_series">Season 1</p>
-                <h2 class="movie_item_info_name">House of the Dragon</h2>
-                <p class="movie_item_info_description">
+                <p class="movie-item__info-series">Season 1</p>
+                <h2 class="movie-item__info-name">House of the Dragon</h2>
+                <p class="movie-item__info-description">
                   An internal succession war within House Targaryen at the
                   height of its power, 172 years before the birth of Daenerys
                   Targaryen.
                 </p>
                 <div class="watch-wrapper flex">
                   <img
-                    class="watch-wrapper-playIcon"
+                    class="watch-wrapper__playIcon"
                     src="./img/icon/playICON.png"
                   />
-                  <p class="watch-wrapper-text">WATCH</p>
+                  <p class="watch-wrapper__text">WATCH</p>
                 </div>
               </div>
             </div>
 
-            <div class="movie_item">
+            <div class="movie-item">
               <img
-                class="movie_item_img"
+                class="movie-item__img"
                 src="./img/filmitem4.png"
-                alt="фильм"
+                alt="film"
               />
 
-              <div class="movie_item_info">
-                <div class="movie_item_info_header flex">
-                  <div class="rating_box flex">
+              <div class="movie-item__info">
+                <div class="movie-item__info-header flex">
+                  <div class="rating-box flex">
                     <img class="rating-icon" src="./img/icon/starICON.png" />
                     <p class="rating-text">8.1</p>
                   </div>
 
-                  <p class="movie_item_info_header_year">2022</p>
+                  <p class="movie-item__info-header__year">2022</p>
                 </div>
 
-                <p class="movie_item_info_series">Season 1</p>
-                <h2 class="movie_item_info_name">House of the Dragon</h2>
-                <p class="movie_item_info_description">
+                <p class="movie-item__info-series">Season 1</p>
+                <h2 class="movie-item__info-name">House of the Dragon</h2>
+                <p class="movie-item__info-description">
                   An internal succession war within House Targaryen at the
                   height of its power, 172 years before the birth of Daenerys
                   Targaryen.
                 </p>
                 <div class="watch-wrapper flex">
                   <img
-                    class="watch-wrapper-playIcon"
+                    class="watch-wrapper__playIcon"
                     src="./img/icon/playICON.png"
                   />
-                  <p class="watch-wrapper-text">WATCH</p>
+                  <p class="watch-wrapper__text">WATCH</p>
                 </div>
               </div>
             </div>
 
-            <div class="movie_item">
+            <div class="movie-item">
               <img
-                class="movie_item_img"
+                class="movie-item__img"
                 src="./img/filmitem7.png"
-                alt="фильм"
+                alt="film"
               />
 
-              <div class="movie_item_info">
-                <div class="movie_item_info_header flex">
-                  <div class="rating_box flex">
+              <div class="movie-item__info">
+                <div class="movie-item__info-header flex">
+                  <div class="rating-box flex">
                     <img class="rating-icon" src="./img/icon/starICON.png" />
                     <p class="rating-text">8.1</p>
                   </div>
 
-                  <p class="movie_item_info_header_year">2022</p>
+                  <p class="movie-item__info-header__year">2022</p>
                 </div>
 
-                <p class="movie_item_info_series">Season 1</p>
-                <h2 class="movie_item_info_name">House of the Dragon</h2>
-                <p class="movie_item_info_description">
+                <p class="movie-item__info-series">Season 1</p>
+                <h2 class="movie-item__info-name">House of the Dragon</h2>
+                <p class="movie-item__info-description">
                   An internal succession war within House Targaryen at the
                   height of its power, 172 years before the birth of Daenerys
                   Targaryen.
                 </p>
                 <button class="watch-wrapper flex">
                   <img
-                    class="watch-wrapper-playIcon"
+                    class="watch-wrapper__playIcon"
                     src="./img/icon/playICON.png"
                   />
-                  <p class="watch-wrapper-text">WATCH</p>
+                  <p class="watch-wrapper__text">WATCH</p>
                 </button>
               </div>
             </div>
@@ -341,4 +349,4 @@
       </main>
     </div>
   </body>
-</html> -->
+</html>
