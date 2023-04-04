@@ -1,2 +1,23 @@
-@import url(../variables/res.css);
-@import url(../variables/base.scss);/*# sourceMappingURL=index.css.map */
+@import "../variables/res.css";
+body {
+  max-width: 1920px;
+  background: #000;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  margin: 0 auto;
+}
+
+main {
+  width: 100%;
+}
+
+.page {
+  width: 1276px;
+  margin: 24px auto 32px;
+}
+
+.flex {
+  display: flex;
+}/*# sourceMappingURL=index.css.map */
