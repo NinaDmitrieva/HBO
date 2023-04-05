@@ -5,6 +5,8 @@
 /*HEADER*/
 .header {
   justify-content: space-between;
+  max-width: 1274px;
+  margin: 0 auto;
 }
 
 .logo {
@@ -47,8 +49,7 @@
   font-weight: 700;
   color: $color_secondary;
 
-  &:hover{
+  &:hover {
     @extend %hover-effect-signin-btn;
   }
 }
-

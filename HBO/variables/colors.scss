@@ -50,6 +50,7 @@ $color__primary: $_light;
 $color_secondary: $_white;
 $color_accent: $_grey;
 
+$bg-color__primary:$_mix-dark-blue-gradient;
 $bg-color_accent: $_black;
 $bg-color_accent_secondary: $_dark-gradient;
 
@@ -65,4 +66,8 @@ $font-color__hover: $_light-grey-opacity;
 $btn-bg-color__primary: $_blue;
 $btn-bg-color__hover: $_blue-opacity;
 
+$item-color: $_silver;
+$item-color_secondary: $_dark-yellow;
+$item-color__accent: $_light-silver;
 $item-color-active: $_yellow;
+

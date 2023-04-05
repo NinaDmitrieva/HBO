@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import "../variables/res.css";
 body {
   max-width: 1920px;
@@ -13,7 +14,6 @@ main {
 }
 
 .page {
-  width: 1276px;
   margin: 24px auto 32px;
 }
 
@@ -51,9 +51,24 @@ main {
   transition: all 0.3s ease-out;
 }
 
+.movie-item__info:hover {
+  background: linear-gradient(90deg, #000000 0%, rgba(13, 0, 123, 0.25) 100%); /*сделала фон темене, что б лучше был виден таекст на белых фонах*/
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  transition: all 0.3s ease-out;
+  opacity: 1;
+}
+
+.watch-wrapper:hover {
+  box-shadow: 0 0 10px 0 rgb(227, 177, 0) inset, 0 0 10px 2px rgb(229, 203, 110);
+  transition: all 0.3s ease-out;
+}
+
 /*HEADER*/
 .header {
   justify-content: space-between;
+  max-width: 1274px;
+  margin: 0 auto;
 }
 
 .logo {
@@ -117,7 +132,20 @@ main {
   transition: all 0.3s ease-out;
 }
 
-.signin__title {
+.movie-item__info:hover {
+  background: linear-gradient(90deg, #000000 0%, rgba(13, 0, 123, 0.25) 100%); /*сделала фон темене, что б лучше был виден таекст на белых фонах*/
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  transition: all 0.3s ease-out;
+  opacity: 1;
+}
+
+.watch-wrapper:hover {
+  box-shadow: 0 0 10px 0 rgb(227, 177, 0) inset, 0 0 10px 2px rgb(229, 203, 110);
+  transition: all 0.3s ease-out;
+}
+
+.movies-title, .signin__title {
   font-weight: 900;
   font-size: 32px;
   line-height: 38px;
@@ -166,7 +194,20 @@ main {
   transition: all 0.3s ease-out;
 }
 
-.signin__title {
+.movie-item__info:hover {
+  background: linear-gradient(90deg, #000000 0%, rgba(13, 0, 123, 0.25) 100%); /*сделала фон темене, что б лучше был виден таекст на белых фонах*/
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  transition: all 0.3s ease-out;
+  opacity: 1;
+}
+
+.watch-wrapper:hover {
+  box-shadow: 0 0 10px 0 rgb(227, 177, 0) inset, 0 0 10px 2px rgb(229, 203, 110);
+  transition: all 0.3s ease-out;
+}
+
+.movies-title, .signin__title {
   font-weight: 900;
   font-size: 32px;
   line-height: 38px;
@@ -212,7 +253,6 @@ main {
   right: 24.5%;
   top: 58%;
 }
-
 .slider-box__logo {
   width: 658px;
 }
@@ -254,4 +294,175 @@ main {
   color: rgb(255, 255, 255);
   font-family: "Lato", sans-serif;
   font-style: normal;
+}
+
+.logo:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper-item:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease-out;
+}
+
+.signin__btn:hover {
+  cursor: pointer;
+  background: #1274e5;
+  transition: all 0.3s ease-out;
+}
+
+.slider-scrollLine:hover {
+  cursor: pointer;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease-out;
+}
+
+.slider-scrollLine__activ:hover, .slider-play__btn:hover {
+  opacity: 0.8;
+  transition: all 0.3s ease-out;
+}
+
+.movie-item__info:hover {
+  background: linear-gradient(90deg, #000000 0%, rgba(13, 0, 123, 0.25) 100%); /*сделала фон темене, что б лучше был виден таекст на белых фонах*/
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  transition: all 0.3s ease-out;
+  opacity: 1;
+}
+
+.watch-wrapper:hover {
+  box-shadow: 0 0 10px 0 rgb(227, 177, 0) inset, 0 0 10px 2px rgb(229, 203, 110);
+  transition: all 0.3s ease-out;
+}
+
+.movies-title, .signin__title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.signin__subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.movies {
+  max-width: 1848px;
+  padding-left: 287px;
+  margin: 0 auto;
+  padding-top: 32px;
+  position: relative;
+}
+.movies-title {
+  padding-bottom: 24px;
+}
+
+.movies-list {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.movies-list::-webkit-scrollbar {
+  width: 0;
+}
+
+.movie-item {
+  cursor: pointer;
+  position: relative;
+  scroll-snap-align: start;
+}
+.movie-item__img {
+  position: relative;
+  width: 210px;
+  height: 300px;
+  background: #d9d9d9;
+  border-radius: 12px;
+}
+.movie-item__info {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 1px;
+  padding: 20px 20px 20px;
+  opacity: 0;
+  border-radius: 12px;
+}
+.movie-item__info-header {
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 56px;
+}
+
+.rating-box {
+  gap: 6.5px;
+}
+
+.rating-icon {
+  width: 13.31px;
+  height: 12.72px;
+}
+
+.rating-text {
+  font-size: 12px;
+  line-height: 14px;
+  color: #e3b100;
+}
+
+.movie-item__info-header__year {
+  font-size: 12px;
+  line-height: 13px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.movie-item__info-series {
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(255, 255, 255, 0.5);
+  padding-bottom: 7px;
+}
+
+.movie-item__info-name {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  padding-bottom: 6px;
+}
+
+.movie-item__info-description {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  color: #e8e8e8;
+  padding-bottom: 48px;
+}
+
+.watch-wrapper {
+  width: 170px;
+  height: 38px;
+  background: #0059c1;
+  border-radius: 12px;
+  cursor: pointer;
+  justify-content: space-between;
+  padding: 11px 15px;
+}
+.watch-wrapper__playIcon {
+  width: 10.27px;
+  height: 12.36px;
+  margin-top: 2px;
+}
+.watch-wrapper__text {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  color: #fff;
 }/*# sourceMappingURL=index.css.map */

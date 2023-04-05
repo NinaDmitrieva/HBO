@@ -20,6 +20,8 @@
 /*HEADER*/
 .header {
   justify-content: space-between;
+  max-width: 1274px;
+  margin: 0 auto;
 }
 
 .logo {
