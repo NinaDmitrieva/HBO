@@ -145,7 +145,7 @@ main {
   transition: all 0.3s ease-out;
 }
 
-.movies-title, .signin__title {
+.subscription_title, .movies-title, .signin__title {
   font-weight: 900;
   font-size: 32px;
   line-height: 38px;
@@ -207,7 +207,7 @@ main {
   transition: all 0.3s ease-out;
 }
 
-.movies-title, .signin__title {
+.subscription_title, .movies-title, .signin__title {
   font-weight: 900;
   font-size: 32px;
   line-height: 38px;
@@ -339,7 +339,7 @@ main {
   transition: all 0.3s ease-out;
 }
 
-.movies-title, .signin__title {
+.subscription_title, .movies-title, .signin__title {
   font-weight: 900;
   font-size: 32px;
   line-height: 38px;
@@ -465,4 +465,178 @@ main {
   font-size: 13px;
   line-height: 16px;
   color: #fff;
+}
+
+.logo:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper-item:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease-out;
+}
+
+.signin__btn:hover {
+  cursor: pointer;
+  background: #1274e5;
+  transition: all 0.3s ease-out;
+}
+
+.slider-scrollLine:hover {
+  cursor: pointer;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease-out;
+}
+
+.slider-scrollLine__activ:hover, .slider-play__btn:hover {
+  opacity: 0.8;
+  transition: all 0.3s ease-out;
+}
+
+.movie-item__info:hover {
+  background: linear-gradient(90deg, #000000 0%, rgba(13, 0, 123, 0.25) 100%); /*сделала фон темене, что б лучше был виден таекст на белых фонах*/
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  transition: all 0.3s ease-out;
+  opacity: 1;
+}
+
+.watch-wrapper:hover {
+  box-shadow: 0 0 10px 0 rgb(227, 177, 0) inset, 0 0 10px 2px rgb(229, 203, 110);
+  transition: all 0.3s ease-out;
+}
+
+.subscription_title, .signin__title, .movies-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.signin__subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.subscription {
+  margin: 60px auto 32px;
+  width: 1274px;
+}
+.subscription_title {
+  padding-bottom: 24px;
+  color: #fff;
+}
+
+.card-list {
+  position: relative;
+  justify-content: center;
+}
+
+.item-left {
+  left: 9%;
+}
+
+.item-left::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(-90deg, #000000 0%, rgba(13, 0, 123, 0.25) 100%);
+  border-radius: 12px;
+}
+
+.card-active {
+  z-index: 100;
+  background: linear-gradient(90deg, rgba(0, 89, 193, 0.5) 0%, rgba(13, 0, 123, 0.5) 100%);
+  border: 1px solid rgba(0, 89, 193, 0.5);
+  border: 1px solid rgba(0, 89, 193, 0.5);
+}
+
+.item-right {
+  right: 9%;
+}
+
+.item-right::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, #000000 0%, rgba(13, 0, 123, 0.25) 100%);
+  border-radius: 12px;
+}
+
+.card-item {
+  cursor: pointer;
+  position: relative;
+  width: 502px;
+  height: 296px;
+  border-radius: 12px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.card-title {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 38px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.options-list {
+  padding-left: 15px;
+  gap: 16px;
+  flex-direction: column;
+  margin: 0;
+}
+.options-list-item {
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+}
+
+.btn-box {
+  flex-direction: row;
+  justify-content: end;
+  gap: 10px;
+}
+
+.btn {
+  width: 147px;
+  height: 40px;
+  border-radius: 12px;
+  border: 1px solid #e3b100;
+  border-radius: 12px;
+  background: none;
+  color: #fff;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px 0 rgb(227, 177, 0) inset, 0 0 10px 2px rgb(229, 203, 110);
+  transition: all 0.3s ease-out;
+}
+
+.btn-activ {
+  background: rgb(227, 177, 0);
 }/*# sourceMappingURL=index.css.map */
