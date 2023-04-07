@@ -1,10 +1,10 @@
-.logo:hover {
+.header-logo:hover {
   cursor: pointer;
   opacity: 0.5;
   transition: all 0.3s ease-out;
 }
 
-.wrapper-item:hover {
+.header-menu__item:hover {
   cursor: pointer;
   opacity: 0.5;
   color: rgb(255, 255, 255);
@@ -23,30 +23,29 @@
   max-width: 1274px;
   margin: 0 auto;
 }
-
-.logo {
+.header-logo {
   width: 100px;
   height: 40.56px;
 }
-.nav-menu {
+.header-menu {
+  align-items: center;
   align-items: center;
   gap: 115px;
 }
-
-.wrapper-left {
-  gap: 43px;
-}
-
-.wrapper-right {
-  gap: 59px;
-}
-
-.wrapper-item {
+.header-menu__item {
   color: rgba(255, 255, 255, 0.75);
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
 }
+.header-menu__wrapper-left {
+  gap: 43px;
+}
+
+.header-menu__wrapper-right {
+  gap: 59px;
+}
+
 .signin__btn {
   justify-content: center;
   align-items: center;

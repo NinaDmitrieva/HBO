@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import "../variables/res.css";
 body {
-  /* max-width: 1920px; */
+  max-width: 1920px;
   background: #000;
   color: rgb(255, 255, 255);
   font-family: "Lato", sans-serif;
@@ -22,13 +22,13 @@ main {
   display: flex;
 }
 
-.logo:hover {
+.header-logo:hover {
   cursor: pointer;
   opacity: 0.5;
   transition: all 0.3s ease-out;
 }
 
-.wrapper-item:hover {
+.header-menu__item:hover {
   cursor: pointer;
   opacity: 0.5;
   color: rgb(255, 255, 255);
@@ -67,42 +67,31 @@ main {
 
 /*HEADER*/
 .header {
-  max-width: 1274px;
-  margin: 0 auto;
-
   justify-content: space-between;
-
   max-width: 1274px;
   margin: 0 auto;
-
 }
-
 .header-logo {
-  max-width: 100px;
+  width: 100px;
   height: 40.56px;
 }
-
-.nav-menu {
-
-
-
+.header-menu {
+  align-items: center;
   align-items: center;
   gap: 115px;
 }
-
+.header-menu__item {
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+}
 .header-menu__wrapper-left {
   gap: 43px;
 }
 
 .header-menu__wrapper-right {
   gap: 59px;
-}
-
-.header-menu__item {
-  color: rgba(255, 255, 255, 0.75);
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 16px;
 }
 
 .signin__btn {
@@ -115,13 +104,13 @@ main {
   font-weight: 700;
   color: #fff;
 }
-.logo:hover {
+.header-logo:hover {
   cursor: pointer;
   opacity: 0.5;
   transition: all 0.3s ease-out;
 }
 
-.wrapper-item:hover {
+.header-menu__item:hover {
   cursor: pointer;
   opacity: 0.5;
   color: rgb(255, 255, 255);
@@ -137,7 +126,6 @@ main {
 .slider-scrollLine:hover {
   cursor: pointer;
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-
   transition: all 0.3s ease-out;
 }
 
@@ -339,15 +327,13 @@ main {
   padding-bottom: 55px;
 }
 
-.logo:hover {
+.header-logo:hover {
   cursor: pointer;
-
   opacity: 0.5;
   transition: all 0.3s ease-out;
-
 }
 
-.wrapper-item:hover {
+.header-menu__item:hover {
   cursor: pointer;
   opacity: 0.5;
   color: rgb(255, 255, 255);
@@ -446,7 +432,9 @@ main {
   right: 24.5%;
   top: 58%;
 }
-
+.slider-box__logo {
+  width: 658px;
+}
 
 .slider-scrollLine {
   position: relative;
@@ -460,7 +448,6 @@ main {
   width: 100px;
   position: absolute;
 }
-
 .slider-play__btn {
   margin: 0 auto;
   width: 198px;
@@ -473,7 +460,6 @@ main {
   gap: 10px;
   padding-bottom: 18px;
 }
-
 .slider-play__btn-icon {
   background: url(../img/icon/playICON.png) no-repeat 60%/12px 14px rgba(255, 255, 255, 0.1);
   width: 40px;
@@ -489,13 +475,13 @@ main {
   font-style: normal;
 }
 
-.logo:hover {
+.header-logo:hover {
   cursor: pointer;
   opacity: 0.5;
   transition: all 0.3s ease-out;
 }
 
-.wrapper-item:hover {
+.header-menu__item:hover {
   cursor: pointer;
   opacity: 0.5;
   color: rgb(255, 255, 255);
@@ -533,7 +519,6 @@ main {
 }
 
 .subscription_title, .movies-title, .signin__title {
-
   font-weight: 900;
   font-size: 32px;
   line-height: 38px;
@@ -590,7 +575,6 @@ main {
   position: relative;
   scroll-snap-align: start;
 }
-
 .movie-item__img {
   position: relative;
   width: 210px;
@@ -598,7 +582,6 @@ main {
   background: #d9d9d9;
   border-radius: 12px;
 }
-
 .movie-item__info {
   position: absolute;
   width: 100%;
@@ -608,8 +591,6 @@ main {
   opacity: 0;
   border-radius: 12px;
 }
-=======
-
 .movie-item__info-header {
   flex-direction: row;
   justify-content: space-between;
@@ -669,7 +650,6 @@ main {
   justify-content: space-between;
   padding: 11px 15px;
 }
-
 .watch-wrapper__playIcon {
   width: 10.27px;
   height: 12.36px;
@@ -682,14 +662,13 @@ main {
   color: #fff;
 }
 
-.logo:hover {
+.header-logo:hover {
   cursor: pointer;
   opacity: 0.5;
   transition: all 0.3s ease-out;
-
 }
 
-.wrapper-item:hover {
+.header-menu__item:hover {
   cursor: pointer;
   opacity: 0.5;
   color: rgb(255, 255, 255);
@@ -857,7 +836,6 @@ main {
   border-radius: 12px;
   background: none;
   color: #fff;
-
   font-weight: 900;
   font-size: 18px;
   line-height: 22px;
@@ -874,13 +852,13 @@ main {
   background: rgb(227, 177, 0);
 }
 
-.logo:hover {
+.header-logo:hover {
   cursor: pointer;
   opacity: 0.5;
   transition: all 0.3s ease-out;
 }
 
-.wrapper-item:hover {
+.header-menu__item:hover {
   cursor: pointer;
   opacity: 0.5;
   color: rgb(255, 255, 255);
