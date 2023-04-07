@@ -1,0 +1,59 @@
+.logo:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper-item:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease-out;
+}
+
+.signin__btn:hover {
+  cursor: pointer;
+  background: #1274e5;
+  transition: all 0.3s ease-out;
+}
+
+/*HEADER*/
+.header {
+  justify-content: space-between;
+  max-width: 1274px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 100px;
+  height: 40.56px;
+}
+.nav-menu {
+  align-items: center;
+  gap: 115px;
+}
+
+.wrapper-left {
+  gap: 43px;
+}
+
+.wrapper-right {
+  gap: 59px;
+}
+
+.wrapper-item {
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+}
+.signin__btn {
+  justify-content: center;
+  align-items: center;
+  width: 121px;
+  height: 40px;
+  background: #0059c1;
+  border-radius: 12px;
+  font-weight: 700;
+  color: #fff;
+}/*# sourceMappingURL=header.css.map */

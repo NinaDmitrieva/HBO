@@ -1,13 +1,12 @@
+@charset "UTF-8";
+@import "../variables/res.css";
 body {
   /* max-width: 1920px; */
   background: #000;
-  color: rgba(255, 255, 255, 1);
+  color: rgb(255, 255, 255);
   font-family: "Lato", sans-serif;
   font-style: normal;
-
   font-weight: 500;
-  font-size: 15px;
-  line-height: 18px;
   margin: 0 auto;
 }
 
@@ -23,27 +22,70 @@ main {
   display: flex;
 }
 
+.logo:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper-item:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease-out;
+}
+
+.signin__btn:hover {
+  cursor: pointer;
+  background: #1274e5;
+  transition: all 0.3s ease-out;
+}
+
+.slider-scrollLine:hover {
+  cursor: pointer;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease-out;
+}
+
+.slider-play__btn:hover, .slider-scrollLine__activ:hover {
+  opacity: 0.8;
+  transition: all 0.3s ease-out;
+}
+
+.movie-item__info:hover {
+  background: linear-gradient(90deg, #000000 0%, rgba(13, 0, 123, 0.25) 100%); /*сделала фон темене, что б лучше был виден таекст на белых фонах*/
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  transition: all 0.3s ease-out;
+  opacity: 1;
+}
+
+.watch-wrapper:hover {
+  box-shadow: 0 0 10px 0 rgb(227, 177, 0) inset, 0 0 10px 2px rgb(229, 203, 110);
+  transition: all 0.3s ease-out;
+}
+
 /*HEADER*/
 .header {
   max-width: 1274px;
   margin: 0 auto;
 
   justify-content: space-between;
-  padding-top: 3px;
+
+  max-width: 1274px;
+  margin: 0 auto;
+
 }
 
 .header-logo {
   max-width: 100px;
   height: 40.56px;
-  cursor: pointer;
 }
 
-.logo:hover {
-  opacity: 0.7;
-  transition: all 0.3s ease-out;
-}
+.nav-menu {
 
-.header-menu {
+
+
   align-items: center;
   gap: 115px;
 }
@@ -62,31 +104,314 @@ main {
   font-size: 13px;
   line-height: 16px;
 }
-.header-menu__item:hover {
-  color: rgba(255, 255, 255, 1);
-  transition: all 0.3s ease-out;
-}
 
-.signin {
+.signin__btn {
+  justify-content: center;
+  align-items: center;
   width: 121px;
   height: 40px;
   background: #0059c1;
   border-radius: 12px;
   font-weight: 700;
-  color: #ffffff;
-  cursor: pointer;
-  font-family: "Lato", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 18px;
+  color: #fff;
 }
-.signin:hover {
+.logo:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper-item:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease-out;
+}
+
+.signin__btn:hover {
+  cursor: pointer;
   background: #1274e5;
   transition: all 0.3s ease-out;
 }
 
-/*SLIDER SECTION*/
+.slider-scrollLine:hover {
+  cursor: pointer;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+
+  transition: all 0.3s ease-out;
+}
+
+.slider-play__btn:hover, .slider-scrollLine__activ:hover {
+  opacity: 0.8;
+  transition: all 0.3s ease-out;
+}
+
+.movie-item__info:hover {
+  background: linear-gradient(90deg, #000000 0%, rgba(13, 0, 123, 0.25) 100%); /*сделала фон темене, что б лучше был виден таекст на белых фонах*/
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  transition: all 0.3s ease-out;
+  opacity: 1;
+}
+
+.watch-wrapper:hover {
+  box-shadow: 0 0 10px 0 rgb(227, 177, 0) inset, 0 0 10px 2px rgb(229, 203, 110);
+  transition: all 0.3s ease-out;
+}
+
+.subscription_title, .movies-title, .signin__title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.signin__subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.card__title {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.card__priсe {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.card__subtitle {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.signin {
+  width: 100%;
+  padding-top: 50px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: center/cover no-repeat url(../img/signupBG.png);
+}
+.signin__title {
+  margin-bottom: 12px;
+}
+.signin__wrapper {
+  gap: 35px;
+  justify-content: center;
+}
+
+.card__activ-svg {
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  top: -3%;
+  left: 95%;
+  opacity: 1;
+}
+
+.card {
+  height: 250px;
+  position: relative;
+  margin: 32px 0 32px;
+  width: 502px;
+  height: 250px;
+  background: linear-gradient(90deg, rgba(0, 89, 193, 0.5) 0%, rgba(13, 0, 123, 0.5) 100%);
+  border-radius: 12px;
+  padding: 32px;
+  flex-direction: column;
+}
+.card__activ {
+  border: 1px solid rgba(0, 89, 193, 0.5);
+}
+.card__wrapper {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.card__subtitle {
+  text-align: start;
+}
+.card__subtitle-position {
+  height: 48px;
+  margin-bottom: 2px;
+}
+.card__btn-choose {
+  margin-top: 27px;
+  width: 93px;
+  height: 40px;
+  background: #e38b00;
+  border-radius: 12px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  align-self: flex-end;
+}
+
+.signin__form {
+  flex-direction: column;
+  width: 733px;
+  margin: 24px auto 0;
+  gap: 24px;
+  text-align: start;
+}
+.signin__form-user-name {
+  width: 100%;
+  gap: 32px;
+}
+.signin__form-input {
+  width: 50%;
+  background: none;
+  border: none;
+  border-bottom: 2px solid rgb(217, 217, 217);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(255, 255, 255, 0.5);
+  padding-bottom: 11px;
+  /*focus*/
+}
+.signin__form-input:focus {
+  outline: none;
+  border-bottom: 1px solid #e38b00;
+}
+.signin__form-input-email, .signin__form-input-password {
+  width: 100%;
+}
+.signin__form-input-checkbox {
+  border-bottom: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+  /*checked*/
+  /*focus*/
+}
+.signin__form-input-checkbox:checked + .input-checkbox__icon {
+  background-color: rgb(255, 255, 255);
+}
+.signin__form-input-checkbox:focus + .input-checkbox__icon {
+  border: 2px solid #e38b00;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: start;
+  padding-left: 35px;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.input-checkbox__icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-left: -35px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+}
+
+.checkbox__btn-submit {
+  width: 100%;
+  width: 733px;
+  height: 40px;
+  background: #0059c1;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+}
+
+.checkbox__btn-text {
+  margin-top: -8px;
+  font-size: 12px;
+  line-height: 13px;
+}
+
+.checkbox__btn-text__span {
+  color: rgb(227, 139, 0);
+  padding-bottom: 55px;
+}
+
+.logo:hover {
+  cursor: pointer;
+
+  opacity: 0.5;
+  transition: all 0.3s ease-out;
+
+}
+
+.wrapper-item:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease-out;
+}
+
+.signin__btn:hover {
+  cursor: pointer;
+  background: #1274e5;
+  transition: all 0.3s ease-out;
+}
+
+.slider-scrollLine:hover {
+  cursor: pointer;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease-out;
+}
+
+.slider-play__btn:hover, .slider-scrollLine__activ:hover {
+  opacity: 0.8;
+  transition: all 0.3s ease-out;
+}
+
+.movie-item__info:hover {
+  background: linear-gradient(90deg, #000000 0%, rgba(13, 0, 123, 0.25) 100%); /*сделала фон темене, что б лучше был виден таекст на белых фонах*/
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  transition: all 0.3s ease-out;
+  opacity: 1;
+}
+
+.watch-wrapper:hover {
+  box-shadow: 0 0 10px 0 rgb(227, 177, 0) inset, 0 0 10px 2px rgb(229, 203, 110);
+  transition: all 0.3s ease-out;
+}
+
+.subscription_title, .movies-title, .signin__title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.signin__subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.card__title {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.card__priсe {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.card__subtitle {
+  font-size: 16px;
+  line-height: 22px;
+}
+
 .slider {
   max-width: 1274px;
   margin: 0 auto;
@@ -102,6 +427,7 @@ main {
   justify-content: end;
   flex-direction: column;
 }
+
 .slider-img::before {
   content: "";
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 63.19%, #000000 100%);
@@ -121,9 +447,6 @@ main {
   top: 58%;
 }
 
-.slider-box__logo {
-  width: 658px;
-}
 
 .slider-scrollLine {
   position: relative;
@@ -131,20 +454,11 @@ main {
   padding-top: 24px;
   margin: 0 auto;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  cursor: pointer;
-}
-.slider-scrollLine:hover {
-  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-  transition: all 0.3s ease-out;
 }
 .slider-scrollLine__activ {
-  border-bottom: 1px solid rgba(227, 177, 0, 1);
+  border-bottom: 1px solid rgb(227, 177, 0);
   width: 100px;
   position: absolute;
-}
-.slider-scrollLine__activ:hover {
-  opacity: 0.8;
-  transition: all 0.3s ease-out;
 }
 
 .slider-play__btn {
@@ -161,26 +475,92 @@ main {
 }
 
 .slider-play__btn-icon {
-  background: url(../img/icon/playICON.png) no-repeat 60%/12px 14px
-    rgba(255, 255, 255, 0.1);
+  background: url(../img/icon/playICON.png) no-repeat 60%/12px 14px rgba(255, 255, 255, 0.1);
   width: 40px;
   height: 40px;
   border-radius: 50%;
 }
-.slider-play__btn:hover {
-  opacity: 0.7;
-  transition: all 0.3s ease-out;
-}
 .slider-play__btn-text {
-  font-family: "Lato";
-  font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 18px;
-  color: rgba(255, 255, 255, 1);
+  color: rgb(255, 255, 255);
+  font-family: "Lato", sans-serif;
+  font-style: normal;
 }
 
-/*MOVIES*/
+.logo:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper-item:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease-out;
+}
+
+.signin__btn:hover {
+  cursor: pointer;
+  background: #1274e5;
+  transition: all 0.3s ease-out;
+}
+
+.slider-scrollLine:hover {
+  cursor: pointer;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease-out;
+}
+
+.slider-scrollLine__activ:hover, .slider-play__btn:hover {
+  opacity: 0.8;
+  transition: all 0.3s ease-out;
+}
+
+.movie-item__info:hover {
+  background: linear-gradient(90deg, #000000 0%, rgba(13, 0, 123, 0.25) 100%); /*сделала фон темене, что б лучше был виден таекст на белых фонах*/
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  transition: all 0.3s ease-out;
+  opacity: 1;
+}
+
+.watch-wrapper:hover {
+  box-shadow: 0 0 10px 0 rgb(227, 177, 0) inset, 0 0 10px 2px rgb(229, 203, 110);
+  transition: all 0.3s ease-out;
+}
+
+.subscription_title, .movies-title, .signin__title {
+
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.signin__subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.card__title {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.card__priсe {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.card__subtitle {
+  font-size: 16px;
+  line-height: 22px;
+}
+
 .movies {
   max-width: 1848px;
   padding-left: 287px;
@@ -188,11 +568,7 @@ main {
   padding-top: 32px;
   position: relative;
 }
-
 .movies-title {
-  font-weight: 900;
-  font-size: 32px;
-  line-height: 38px;
   padding-bottom: 24px;
 }
 
@@ -204,6 +580,7 @@ main {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
 }
+
 .movies-list::-webkit-scrollbar {
   width: 0;
 }
@@ -231,18 +608,7 @@ main {
   opacity: 0;
   border-radius: 12px;
 }
-
-.movie-item__info:hover {
-  background: rgba(
-    0,
-    0,
-    0,
-    0.15
-  ); /*сделала фон темене, что б лучше был виден таекст на белых фонах*/
-  backdrop-filter: blur(5px);
-  transition: all 0.3s ease-out;
-  opacity: 1;
-}
+=======
 
 .movie-item__info-header {
   flex-direction: row;
@@ -253,6 +619,7 @@ main {
 .rating-box {
   gap: 6.5px;
 }
+
 .rating-icon {
   width: 13.31px;
   height: 12.72px;
@@ -263,9 +630,10 @@ main {
   line-height: 14px;
   color: #e3b100;
 }
+
 .movie-item__info-header__year {
   font-size: 12px;
-  line-height: 14px;
+  line-height: 13px;
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -280,7 +648,7 @@ main {
   font-weight: 900;
   font-size: 18px;
   line-height: 22px;
-  color: #ffffff;
+  color: #fff;
   padding-bottom: 6px;
 }
 
@@ -302,11 +670,6 @@ main {
   padding: 11px 15px;
 }
 
-.watch-wrapper:hover {
-  box-shadow: 0 0 10px 0 rgba(227, 177, 0) inset,
-    0 0 10px 2px rgb(229, 203, 110);
-  transition: all 0.3s ease-out;
-}
 .watch-wrapper__playIcon {
   width: 10.27px;
   height: 12.36px;
@@ -316,20 +679,88 @@ main {
   font-weight: 700;
   font-size: 13px;
   line-height: 16px;
-  color: #ffffff;
+  color: #fff;
 }
 
-/*SUBSCRIPTION*/
+.logo:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.3s ease-out;
+
+}
+
+.wrapper-item:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease-out;
+}
+
+.signin__btn:hover {
+  cursor: pointer;
+  background: #1274e5;
+  transition: all 0.3s ease-out;
+}
+
+.slider-scrollLine:hover {
+  cursor: pointer;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease-out;
+}
+
+.slider-scrollLine__activ:hover, .slider-play__btn:hover {
+  opacity: 0.8;
+  transition: all 0.3s ease-out;
+}
+
+.movie-item__info:hover {
+  background: linear-gradient(90deg, #000000 0%, rgba(13, 0, 123, 0.25) 100%); /*сделала фон темене, что б лучше был виден таекст на белых фонах*/
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  transition: all 0.3s ease-out;
+  opacity: 1;
+}
+
+.watch-wrapper:hover {
+  box-shadow: 0 0 10px 0 rgb(227, 177, 0) inset, 0 0 10px 2px rgb(229, 203, 110);
+  transition: all 0.3s ease-out;
+}
+
+.subscription_title, .signin__title, .movies-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.signin__subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.card__title {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.card__priсe {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.card__subtitle {
+  font-size: 16px;
+  line-height: 22px;
+}
+
 .subscription {
   margin: 60px auto 32px;
   width: 1274px;
 }
 .subscription_title {
-  font-weight: 900;
-  font-size: 32px;
-  line-height: 38px;
-  color: #ffffff;
   padding-bottom: 24px;
+  color: #fff;
 }
 
 .card-list {
@@ -340,6 +771,7 @@ main {
 .item-left {
   left: 9%;
 }
+
 .item-left::before {
   content: "";
   display: block;
@@ -356,15 +788,11 @@ main {
 
 .card-active {
   z-index: 100;
-  background: linear-gradient(
-      0deg,
-      rgba(0, 89, 193, 0.5),
-      rgba(0, 89, 193, 0.5)
-    ),
-    linear-gradient(90deg, rgba(0, 89, 193, 0.5) 0%, rgba(13, 0, 123, 0.5) 100%);
-
+  background: linear-gradient(90deg, rgba(0, 89, 193, 0.5) 0%, rgba(13, 0, 123, 0.5) 100%);
+  border: 1px solid rgba(0, 89, 193, 0.5);
   border: 1px solid rgba(0, 89, 193, 0.5);
 }
+
 .item-right {
   right: 9%;
 }
@@ -382,6 +810,7 @@ main {
   background: linear-gradient(90deg, #000000 0%, rgba(13, 0, 123, 0.25) 100%);
   border-radius: 12px;
 }
+
 .card-item {
   cursor: pointer;
   position: relative;
@@ -397,8 +826,8 @@ main {
 .card-title {
   font-weight: 900;
   font-size: 30px;
-  line-height: 36px;
-  color: #ffffff;
+  line-height: 38px;
+  color: #fff;
   white-space: nowrap;
 }
 
@@ -408,11 +837,10 @@ main {
   flex-direction: column;
   margin: 0;
 }
-
-.options-item {
+.options-list-item {
   font-size: 16px;
   line-height: 19px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .btn-box {
@@ -425,13 +853,11 @@ main {
   width: 147px;
   height: 40px;
   border-radius: 12px;
-  border: 1px solid #e38b00;
+  border: 1px solid #e3b100;
   border-radius: 12px;
   background: none;
   color: #fff;
-  cursor: pointer;
-  font-family: "Lato";
-  font-style: normal;
+
   font-weight: 900;
   font-size: 18px;
   line-height: 22px;
@@ -439,10 +865,234 @@ main {
 }
 
 .btn:hover {
-  box-shadow: 0 0 10px 0 rgba(227, 177, 0) inset,
-    0 0 10px 2px rgb(229, 203, 110);
+  cursor: pointer;
+  box-shadow: 0 0 10px 0 rgb(227, 177, 0) inset, 0 0 10px 2px rgb(229, 203, 110);
   transition: all 0.3s ease-out;
 }
+
 .btn-activ {
-  background: rgba(227, 139, 0, 1);
+  background: rgb(227, 177, 0);
 }
+
+.logo:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.3s ease-out;
+}
+
+.wrapper-item:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease-out;
+}
+
+.signin__btn:hover {
+  cursor: pointer;
+  background: #1274e5;
+  transition: all 0.3s ease-out;
+}
+
+.slider-scrollLine:hover {
+  cursor: pointer;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease-out;
+}
+
+.slider-scrollLine__activ:hover, .slider-play__btn:hover {
+  opacity: 0.8;
+  transition: all 0.3s ease-out;
+}
+
+.movie-item__info:hover {
+  background: linear-gradient(90deg, #000000 0%, rgba(13, 0, 123, 0.25) 100%); /*сделала фон темене, что б лучше был виден таекст на белых фонах*/
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  transition: all 0.3s ease-out;
+  opacity: 1;
+}
+
+.watch-wrapper:hover {
+  box-shadow: 0 0 10px 0 rgb(227, 177, 0) inset, 0 0 10px 2px rgb(229, 203, 110);
+  transition: all 0.3s ease-out;
+}
+
+.signin__title, .movies-title, .subscription_title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.signin__subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.card__title {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.card__priсe {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.card__subtitle {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.signin {
+  width: 100%;
+  padding-top: 50px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: center/cover no-repeat url(../img/signupBG.png);
+}
+.signin__title {
+  margin-bottom: 12px;
+}
+.signin__wrapper {
+  gap: 35px;
+  justify-content: center;
+}
+
+.card__activ-svg {
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  top: -3%;
+  left: 95%;
+  opacity: 1;
+}
+
+.card {
+  height: 250px;
+  position: relative;
+  margin: 32px 0 32px;
+  width: 502px;
+  height: 250px;
+  background: linear-gradient(90deg, rgba(0, 89, 193, 0.5) 0%, rgba(13, 0, 123, 0.5) 100%);
+  border-radius: 12px;
+  padding: 32px;
+  flex-direction: column;
+}
+.card__activ {
+  border: 1px solid rgba(0, 89, 193, 0.5);
+}
+.card__wrapper {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.card__subtitle {
+  text-align: start;
+}
+.card__subtitle-position {
+  height: 48px;
+  margin-bottom: 2px;
+}
+.card__btn-choose {
+  margin-top: 27px;
+  width: 93px;
+  height: 40px;
+  background: #e38b00;
+  border-radius: 12px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  align-self: flex-end;
+}
+
+.signin__form {
+  flex-direction: column;
+  width: 733px;
+  margin: 24px auto 0;
+  gap: 24px;
+  text-align: start;
+}
+.signin__form-user-name {
+  width: 100%;
+  gap: 32px;
+}
+.signin__form-input {
+  width: 50%;
+  background: none;
+  border: none;
+  border-bottom: 2px solid rgb(217, 217, 217);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(255, 255, 255, 0.5);
+  padding-bottom: 11px;
+  /*focus*/
+}
+.signin__form-input:focus {
+  outline: none;
+  border-bottom: 1px solid #e38b00;
+}
+.signin__form-input-email, .signin__form-input-password {
+  width: 100%;
+}
+.signin__form-input-checkbox {
+  border-bottom: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+  /*checked*/
+  /*focus*/
+}
+.signin__form-input-checkbox:checked + .input-checkbox__icon {
+  background-color: rgb(255, 255, 255);
+}
+.signin__form-input-checkbox:focus + .input-checkbox__icon {
+  border: 2px solid #e38b00;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: start;
+  padding-left: 35px;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.input-checkbox__icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-left: -35px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+}
+
+.checkbox__btn-submit {
+  width: 100%;
+  width: 733px;
+  height: 40px;
+  background: #0059c1;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+}
+
+.checkbox__btn-text {
+  margin-top: -8px;
+  font-size: 12px;
+  line-height: 13px;
+}
+
+.checkbox__btn-text__span {
+  color: rgb(227, 139, 0);
+  padding-bottom: 55px;
+}/*# sourceMappingURL=index.css.map */
