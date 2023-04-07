@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -39,21 +39,77 @@
       <section class="signin flex">
         <h1 class="signin__title">SIGN UP</h1>
         <h2 class="signin__subtitle">Choose your HBO Max plan</h2>
-        <div class="wrapper">
-          <div class="card"></div>
-          <div class="card"></div>
-        </div>
-        <form class="signin__form">
-          <h2 class="signin__form-title">Create an account</h2>
-          <inpur />
-          <inpur />
-          <inpur />
-          <inpur />
+        <div class="signin__wrapper flex">
+          <div class="card flex">
+            <div class="card__wrapper flex">
+              <h3 class="card__title">Monthly</h3>
+              <p class="card__priсe">7.99$/mo</p>
+            </div>
 
-          <input type="checkbox" />Use my email address to send marketing
-          promotions and offers from HBO Max (a WarnerMedia company) and
-          Affiliates via email, social media and other channels
-          <button></button>
+            <p class="card__subtitle">You can opt out at any time.</p>
+
+            <button class="card__btn-choose">Choose</button>
+          </div>
+          <div class="card flex">
+            <div class="card__wrapper flex">
+              <h3 class="card__title">Annual</h3>
+              <p class="card__priсe">71.99$/year</p>
+            </div>
+
+            <p class="card__subtitle">
+              If you pay for 12 months in advance, this corresponds to a price
+              of only PLN 5.99/month.
+            </p>
+
+            <button class="card__btn-choose">Choose</button>
+          </div>
+        </div>
+
+        <h2 class="signin__subtitle">Create an account</h2>
+        <form class="signin__form flex">
+          <div class="signin__form-user-name flex">
+            <input
+              class="signin__form-input"
+              placeholder="Yana"
+              required
+              type="text"
+            />
+            <input
+              class="signin__form-input"
+              placeholder="Your last name"
+              required
+              type="text"
+            />
+          </div>
+
+          <input
+            class="signin__form-input signin__form-input-email"
+            placeholder="Email"
+            required
+            type="email"
+          />
+          <input
+            class="signin__form-input signin__form-input-password"
+            placeholder="Password"
+            required
+            type="password"
+          />
+
+          <label class="checkbox">
+            <input
+              checked
+              class="signin__form-input-checkbox"
+              type="checkbox"
+              required
+            />
+            Use my email address to send marketing promotions and offers from
+            HBO Max (a WarnerMedia company) and Affiliates via email, social
+            media and other channels
+            <span class="input-checkbox__icon"></span>
+            
+          </label>
+
+          <button type="submit"></button>
           <p>
             To withdraw your consent (including any consent you have previously
             given) and to learn more about your rights and how to exercise them,
