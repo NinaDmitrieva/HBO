@@ -3,6 +3,7 @@
 $_white: #fff;
 $_black: #000;
 $_light: rgba(255, 255, 255, 1);
+$_light-accent: rgba(217, 217, 217, 1);
 
 $_light-grey: rgba(255, 255, 255, 0.75);
 $_light-grey-opacity: rgba(255, 255, 255, 1);
@@ -11,6 +12,7 @@ $_dark-grey: rgba(255, 255, 255, 0.15);
 
 $_blue: #0059c1;
 $_blue-opacity: #1274e5;
+$_blue-gradient: rgba(0, 89, 193, 0.5);
 $_dark-blue: rgba(0, 89, 193, 0.5);
 
 $_dark-gradient: linear-gradient(180deg, rgba(0, 0, 0, 0) 63.19%, #000000 100%);
@@ -40,6 +42,8 @@ $_light-yellow: rgba(227, 177, 0);
 $_light-yellow-opacity: rgb(229, 203, 110);
 $_dark-yellow: #e3b100;
 
+$_gold: #e38b00;
+
 $_silver: #d9d9d9;
 $_light-silver: #e8e8e8;
 $_bright-yellow: rgba(227, 139, 0, 1);
@@ -55,19 +59,24 @@ $bg-color_accent: $_black;
 $bg-color_accent_secondary: $_dark-gradient;
 
 // $bg-color_disabled:;
-// $bg-color_activ: ;
+$bg-color_activ: $_blue-gradient;
 // $bg-color_hover:;
 
-$font-color__primary: $_light-grey;
 // $font-color__secondary:;
-// $font-color__accent:;
+$font-color__accent:$_bright-yellow;
+$font-color__primary: $_light-grey;
 $font-color__hover: $_light-grey-opacity;
 
 $btn-bg-color__primary: $_blue;
+$btn-bg--color__secondary: $_mix-light-blue-gradient;
 $btn-bg-color__hover: $_blue-opacity;
+
+$btn-activ__accent:$_gold;
 
 $item-color: $_silver;
 $item-color_secondary: $_dark-yellow;
 $item-color__accent: $_light-silver;
 $item-color-active: $_yellow;
+
+$item-border_secondary: $_light-accent;
 

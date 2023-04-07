@@ -10,3 +10,19 @@
   font-size: $font-size_l-2;
   line-height: $line-height_l-2;
 }
+%font-title {
+  font-weight: $font-weight_l;
+  font-size: $font-size_l2;
+  line-height: $line-height_lm;
+}
+
+%font-price{
+  font-size: $font-size_l-2;
+  line-height: $line-height_l-2;
+}
+
+%font-subtitle {
+  font-size: $font-size_m-2;
+  line-height: $line-height_ml-2;
+}
+
