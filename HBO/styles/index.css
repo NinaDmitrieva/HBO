@@ -35,7 +35,7 @@ main {
   transition: all 0.3s ease-out;
 }
 
-.signin__btn:hover {
+.checkbox__btn-submit:hover, .signin__btn:hover {
   cursor: pointer;
   background: #1274e5;
   transition: all 0.3s ease-out;
@@ -117,7 +117,7 @@ main {
   transition: all 0.3s ease-out;
 }
 
-.signin__btn:hover {
+.checkbox__btn-submit:hover, .signin__btn:hover {
   cursor: pointer;
   background: #1274e5;
   transition: all 0.3s ease-out;
@@ -192,11 +192,14 @@ main {
 }
 
 .card__activ-svg {
+  opacity: 0;
   width: 38px;
   height: 38px;
   position: absolute;
-  top: -3%;
+  top: -5%;
   left: 95%;
+}
+.card__activ-svg__activ {
   opacity: 1;
 }
 
@@ -315,7 +318,6 @@ main {
   line-height: 18px;
   color: #fff;
 }
-
 .checkbox__btn-text {
   margin-top: -8px;
   font-size: 12px;
@@ -340,7 +342,7 @@ main {
   transition: all 0.3s ease-out;
 }
 
-.signin__btn:hover {
+.signin__btn:hover, .checkbox__btn-submit:hover {
   cursor: pointer;
   background: #1274e5;
   transition: all 0.3s ease-out;
@@ -488,7 +490,7 @@ main {
   transition: all 0.3s ease-out;
 }
 
-.signin__btn:hover {
+.signin__btn:hover, .checkbox__btn-submit:hover {
   cursor: pointer;
   background: #1274e5;
   transition: all 0.3s ease-out;
@@ -675,7 +677,7 @@ main {
   transition: all 0.3s ease-out;
 }
 
-.signin__btn:hover {
+.signin__btn:hover, .checkbox__btn-submit:hover {
   cursor: pointer;
   background: #1274e5;
   transition: all 0.3s ease-out;
@@ -865,7 +867,7 @@ main {
   transition: all 0.3s ease-out;
 }
 
-.signin__btn:hover {
+.signin__btn:hover, .checkbox__btn-submit:hover {
   cursor: pointer;
   background: #1274e5;
   transition: all 0.3s ease-out;
@@ -940,11 +942,14 @@ main {
 }
 
 .card__activ-svg {
+  opacity: 0;
   width: 38px;
   height: 38px;
   position: absolute;
-  top: -3%;
+  top: -5%;
   left: 95%;
+}
+.card__activ-svg__activ {
   opacity: 1;
 }
 
@@ -1063,7 +1068,6 @@ main {
   line-height: 18px;
   color: #fff;
 }
-
 .checkbox__btn-text {
   margin-top: -8px;
   font-size: 12px;

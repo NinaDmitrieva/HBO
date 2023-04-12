@@ -26,12 +26,15 @@
 }
 
 .card__activ-svg {
-  width: 38px;
-  height: 38px;
-  position: absolute;
-  top: -3%;
-  left: 95%;
-  opacity: 1;
+  opacity: 0;
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    top: -5%;
+    left: 95%;
+  &__activ {
+    opacity: 1;
+  }
 }
 .card {
   height: 250px;
@@ -149,7 +152,7 @@
 
   font-size: $font-size_m;
   line-height: $line-height_m;
-  
+
   color: $color_accent;
 }
 .input-checkbox__icon {
@@ -171,6 +174,10 @@
   font-size: $font-size_m;
   line-height: $line-height_default;
   color: $color_secondary;
+
+  &:hover {
+    @extend %hover-effect-signin-btn;
+  }
 }
 .checkbox__btn-text {
   margin-top: -8px;
