@@ -1,0 +1,64 @@
+.footer-logo__link:hover, .footer-link:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease-out;
+}
+
+.footer {
+  justify-content: space-between;
+  max-width: 1274px;
+  align-items: center;
+}
+.footer__wrapper {
+  gap: 12px;
+}
+
+.footer-link {
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  background: #0059c1;
+  border-radius: 6px;
+  font-weight: 700;
+  color: #fff;
+  font-size: 13px;
+}
+.footer-support {
+  padding-bottom: 10px;
+}
+.footer-support__title {
+  font-size: 14px;
+  margin-bottom: 17px;
+}
+.footer-support__message {
+  width: 142px;
+}
+.footer-support__email {
+  width: 40px;
+}
+.footer-support__call {
+  width: 40px;
+}
+
+.footer-navMenu {
+  background: url(../img/footerBgr.png);
+  width: 427px;
+  height: 286px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 36px 0 16px;
+}
+
+.footer-logo {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-logo__paragraf {
+  margin-bottom: 13px;
+  font-size: 12px;
+  align-self: end;
+}/*# sourceMappingURL=footer.css.map */

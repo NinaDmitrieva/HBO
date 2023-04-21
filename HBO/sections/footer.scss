@@ -1,0 +1,67 @@
+@import "../styles/extend/hover.scss";
+@import "../variables/typography.scss";
+@import "../variables/colors.scss";
+@import "../styles/extend/font.scss";
+
+.footer {
+  justify-content: space-between;
+  max-width: 1274px;
+  align-items: center;
+
+  &__wrapper {
+    gap: 12px;
+  }
+}
+.footer-link {
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  background: $btn-bg-color__primary;
+  border-radius: 6px;
+  font-weight: 700;
+  color: $color_secondary;
+  font-size: $font-size_s;
+  &:hover {
+    @extend %hover-effect-nav-item;
+  }
+}
+.footer-support {
+  padding-bottom: 10px;
+  &__title {
+    font-size: $font-size_m;
+    margin-bottom: 17px;
+  }
+  &__message {
+    width: 142px;
+  }
+  &__email {
+    width: 40px;
+  }
+  &__call {
+    width: 40px;
+  }
+}
+.footer-navMenu {
+  background: url(../img/footerBgr.png);
+  width: 427px;
+  height: 286px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 36px 0 16px;
+}
+.footer-logo {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__paragraf {
+    margin-bottom: 13px;
+    font-size: $font-size_xs;
+    align-self: end;
+  }
+  &__link:hover {
+    @extend %hover-effect-nav-item;
+  }
+}

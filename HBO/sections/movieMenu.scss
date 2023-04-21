@@ -9,7 +9,7 @@
   padding-top: 46px;
   margin: 0 auto;
   flex-direction: column;
-  gap: 30px;
+  // gap: 30px;
 }
 .section__wrapper {
   width: 100%;
@@ -143,6 +143,7 @@
   position: relative;
   //   display: flex;
   //   flex-wrap: nowrap;
+  margin-bottom: 30px;
 
   &__title {
     @extend %font-h1;
@@ -153,6 +154,7 @@
 .movies-section {
   width: 1317px;
   position: relative;
+  margin-bottom: 30px;
   &__title {
     @extend %font-h1;
     padding-bottom: 28px;

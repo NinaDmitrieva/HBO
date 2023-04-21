@@ -31,7 +31,6 @@
   padding-top: 46px;
   margin: 0 auto;
   flex-direction: column;
-  gap: 30px;
 }
 
 .section__wrapper {
@@ -149,6 +148,7 @@
 .tv-shows-section {
   width: 1317px;
   position: relative;
+  margin-bottom: 30px;
 }
 .tv-shows-section__title {
   padding-bottom: 20px;
@@ -157,6 +157,7 @@
 .movies-section {
   width: 1317px;
   position: relative;
+  margin-bottom: 30px;
 }
 .movies-section__title {
   padding-bottom: 28px;
