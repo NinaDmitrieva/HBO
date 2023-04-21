@@ -9,6 +9,7 @@ $_light-grey: rgba(255, 255, 255, 0.75);
 $_light-grey-opacity: rgba(255, 255, 255, 1);
 $_grey: rgba(255, 255, 255, 0.5);
 $_dark-grey: rgba(255, 255, 255, 0.15);
+$_mid-grey:  #707070;
 
 $_blue: #0059c1;
 $_blue-opacity: #1274e5;
@@ -36,6 +37,8 @@ $_mix-dark-blue-gradient: linear-gradient(
   #000000 0%,
   rgba(13, 0, 123, 0.25) 100%
 );
+$-mix-item-gradient:  linear-gradient(180deg, #0059C1 0%, #9E00FF 77.08%);
+;
 
 $_yellow: rgba(227, 177, 0, 1);
 $_light-yellow: rgba(227, 177, 0);
@@ -79,4 +82,6 @@ $item-color__accent: $_light-silver;
 $item-color-active: $_yellow;
 
 $item-border_secondary: $_light-accent;
+$item-links__primary: $_mid-grey;
+$item-special__primary: $-mix-item-gradient;
 

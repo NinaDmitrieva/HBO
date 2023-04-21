@@ -28,7 +28,7 @@ main {
   transition: all 0.3s ease-out;
 }
 
-.footer-logo__link:hover, .footer-link:hover, .arrow__svg:hover, .header-menu__item:hover {
+.footer-logo__link:hover, .footer-navMenu__logo:hover, .footer-navMenu__addConditions-link:hover, .footer-navMenu__menu-link:hover, .footer-link:hover, .arrow__svg:hover, .header-menu__item:hover {
   cursor: pointer;
   opacity: 0.5;
   color: rgb(255, 255, 255);
@@ -110,7 +110,7 @@ main {
   transition: all 0.3s ease-out;
 }
 
-.footer-logo__link:hover, .footer-link:hover, .arrow__svg:hover, .header-menu__item:hover {
+.footer-logo__link:hover, .footer-navMenu__logo:hover, .footer-navMenu__addConditions-link:hover, .footer-navMenu__menu-link:hover, .footer-link:hover, .arrow__svg:hover, .header-menu__item:hover {
   cursor: pointer;
   opacity: 0.5;
   color: rgb(255, 255, 255);
@@ -335,7 +335,7 @@ main {
   transition: all 0.3s ease-out;
 }
 
-.footer-logo__link:hover, .footer-link:hover, .arrow__svg:hover, .header-menu__item:hover {
+.footer-logo__link:hover, .footer-navMenu__logo:hover, .footer-navMenu__addConditions-link:hover, .footer-navMenu__menu-link:hover, .footer-link:hover, .arrow__svg:hover, .header-menu__item:hover {
   cursor: pointer;
   opacity: 0.5;
   color: rgb(255, 255, 255);
@@ -483,7 +483,7 @@ main {
   transition: all 0.3s ease-out;
 }
 
-.footer-logo__link:hover, .footer-link:hover, .arrow__svg:hover, .header-menu__item:hover {
+.footer-logo__link:hover, .footer-navMenu__logo:hover, .footer-navMenu__addConditions-link:hover, .footer-navMenu__menu-link:hover, .footer-link:hover, .arrow__svg:hover, .header-menu__item:hover {
   cursor: pointer;
   opacity: 0.5;
   color: rgb(255, 255, 255);
@@ -670,7 +670,7 @@ main {
   transition: all 0.3s ease-out;
 }
 
-.footer-logo__link:hover, .footer-link:hover, .arrow__svg:hover, .header-menu__item:hover {
+.footer-logo__link:hover, .footer-navMenu__logo:hover, .footer-navMenu__addConditions-link:hover, .footer-navMenu__menu-link:hover, .footer-link:hover, .arrow__svg:hover, .header-menu__item:hover {
   cursor: pointer;
   opacity: 0.5;
   color: rgb(255, 255, 255);
@@ -860,7 +860,7 @@ main {
   transition: all 0.3s ease-out;
 }
 
-.footer-logo__link:hover, .footer-link:hover, .arrow__svg:hover, .header-menu__item:hover {
+.footer-logo__link:hover, .footer-navMenu__logo:hover, .footer-navMenu__addConditions-link:hover, .footer-navMenu__menu-link:hover, .footer-link:hover, .arrow__svg:hover, .header-menu__item:hover {
   cursor: pointer;
   opacity: 0.5;
   color: rgb(255, 255, 255);
@@ -1085,7 +1085,7 @@ main {
   transition: all 0.3s ease-out;
 }
 
-.footer-logo__link:hover, .footer-link:hover, .arrow__svg:hover, .header-menu__item:hover {
+.footer-logo__link:hover, .footer-navMenu__logo:hover, .footer-navMenu__addConditions-link:hover, .footer-navMenu__menu-link:hover, .footer-link:hover, .arrow__svg:hover, .header-menu__item:hover {
   cursor: pointer;
   opacity: 0.5;
   color: rgb(255, 255, 255);
@@ -1302,7 +1302,7 @@ main {
   transition: all 0.3s ease-out;
 }
 
-.footer-logo__link:hover, .footer-link:hover, .header-menu__item:hover, .arrow__svg:hover {
+.footer-logo__link:hover, .footer-navMenu__logo:hover, .footer-navMenu__addConditions-link:hover, .footer-navMenu__menu-link:hover, .footer-link:hover, .header-menu__item:hover, .arrow__svg:hover {
   cursor: pointer;
   opacity: 0.5;
   color: rgb(255, 255, 255);
@@ -1371,6 +1371,7 @@ main {
   justify-content: space-between;
   max-width: 1274px;
   align-items: center;
+  margin: 0 auto;
 }
 .footer__wrapper {
   gap: 12px;
@@ -1411,7 +1412,53 @@ main {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  padding: 36px 0 16px;
+  padding: 36px 0 30px;
+}
+.footer-navMenu__wrapper {
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+.footer-navMenu__menu {
+  gap: 16px;
+}
+.footer-navMenu__menu-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #707070;
+}
+.footer-navMenu__menu-link-activ {
+  color: #fff;
+}
+.footer-navMenu__menu-link-special {
+  background: linear-gradient(180deg, #0059C1 0%, #9E00FF 77.08%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 1px solid #9e00ff;
+}
+.footer-navMenu__addConditions {
+  margin-top: 7px;
+  gap: 16px;
+  justify-content: center;
+}
+.footer-navMenu__addConditions-link {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  color: #707070;
+}
+.footer-navMenu__logo-img {
+  width: 63px;
+  height: 26px;
+}
+.footer-navMenu__paragraf {
+  width: 252px;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: center;
+  color: #707070;
 }
 
 .footer-logo {

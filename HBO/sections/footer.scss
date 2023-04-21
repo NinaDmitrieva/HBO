@@ -7,6 +7,7 @@
   justify-content: space-between;
   max-width: 1274px;
   align-items: center;
+  margin: 0 auto;
 
   &__wrapper {
     gap: 12px;
@@ -49,7 +50,65 @@
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  padding: 36px 0 16px;
+  padding: 36px 0 30px;
+
+  &__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  &__menu {
+    gap: 16px;
+
+    &-link {
+      font-weight: $font-weight_s;
+      font-size: $font-size_m;
+      line-height: $line-height_m;
+      color: $item-links__primary;
+    }
+    &-link-activ {
+      color: $color_secondary;
+    }
+    &-link-special {
+      background: $item-special__primary;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      border-bottom: 1px solid #9e00ff;
+    }
+    &-link:hover {
+      @extend %hover-effect-nav-item;
+    }
+  }
+  &__addConditions {
+    margin-top: 7px;
+    gap: 16px;
+    justify-content: center;
+    &-link {
+      font-weight: $font-weight_s;
+      font-size: $font-size_xs;
+      line-height: $line-height_m;
+      color: $item-links__primary;
+    }
+    &-link:hover {
+      @extend %hover-effect-nav-item;
+    }
+  }
+  &__logo:hover{
+      @extend %hover-effect-nav-item;
+    }
+  &__logo-img {
+    width: 63px;
+    height: 26px;
+  }
+  &__paragraf {
+    width: 252px;
+    font-weight: $font-weight_s;
+    font-size: $font-size_xl;
+    line-height: $line-height_xs;
+    text-align: center;
+    color: $item-links__primary;
+  }
 }
 .footer-logo {
   flex-direction: column;
