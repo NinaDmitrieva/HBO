@@ -27,11 +27,11 @@
 
 .card__activ-svg {
   opacity: 0;
-    width: 38px;
-    height: 38px;
-    position: absolute;
-    top: -5%;
-    left: 95%;
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  top: -5%;
+  left: 95%;
   &__activ {
     opacity: 1;
   }
@@ -84,6 +84,9 @@
     line-height: $line-height_ml-2;
     color: $color_secondary;
     align-self: flex-end;
+    &:hover {
+      @extend %hover-effect;
+    }
   }
 }
 

@@ -1,4 +1,10 @@
 @charset "UTF-8";
+.card__btn-choose:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.3s ease-out;
+}
+
 .checkbox__btn-submit:hover {
   cursor: pointer;
   background: #1274e5;
@@ -98,7 +104,6 @@
   color: #fff;
   align-self: flex-end;
 }
-
 .signin__form {
   flex-direction: column;
   width: 733px;

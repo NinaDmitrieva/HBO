@@ -29,7 +29,6 @@
 }
 .header-menu {
   align-items: center;
-  align-items: center;
   gap: 115px;
 }
 .header-menu__item {
@@ -47,6 +46,7 @@
 }
 
 .signin__btn {
+  align-self: center;
   justify-content: center;
   align-items: center;
   width: 121px;
@@ -55,4 +55,53 @@
   border-radius: 12px;
   font-weight: 700;
   color: #fff;
+}
+@media (max-width: 1280px) {
+  .header {
+    max-width: 70%;
+    transition: all 0.5s ease-out;
+  }
+  .header-menu {
+    gap: 50px;
+  }
+  .header-menu__wrapper-left, .header-menu__wrapper-right {
+    gap: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .header-menu__item {
+    transition: all 0.5s ease-out;
+    font-size: 11px;
+    line-height: 13px;
+  }
+  .signin__btn {
+    width: 80px;
+    height: 30px;
+  }
+  .header-menu,
+  .header-menu__wrapper-left,
+  .header-menu__wrapper-right {
+    gap: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    max-width: 90%;
+    gap: 15px;
+  }
+  .header-menu__item {
+    transition: all 0.5s ease-out;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .header,
+  .header-menu,
+  .header-menu__wrapper-left,
+  .header-menu__wrapper-right {
+    flex-direction: column;
+    align-items: start;
+  }
+  .signin__btn {
+    width: 100%;
+  }
 }/*# sourceMappingURL=header.css.map */

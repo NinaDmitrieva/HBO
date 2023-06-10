@@ -1,6 +1,8 @@
 @import "../styles/extend/hover.scss";
+@import "../styles/mixin/media_breakpoints.scss";
 @import "../variables/typography.scss";
 @import "../variables/colors.scss";
+@import "../variables/breakpoints.scss";
 
 /*HEADER*/
 .header {
@@ -17,7 +19,6 @@
   }
 
   &-menu {
-    align-items: center;
     align-items: center;
     gap: 115px;
 
@@ -40,18 +41,8 @@
   gap: 59px;
 }
 
-// .wrapper-item {
-//   color: $font-color__primary;
-//   font-weight: $font-weight_s;
-//   font-size: $font-size_s;
-//   line-height: $font-size_m-2;
-
-//   &:hover {
-//     @extend %hover-effect-nav-item;
-//   }
-// }
-
 .signin__btn {
+  align-self: center;
   justify-content: center;
   align-items: center;
   width: 121px;
@@ -63,5 +54,61 @@
 
   &:hover {
     @extend %hover-effect-signin-btn;
+  }
+}
+
+@include desktop {
+  .header {
+    max-width: 70%;
+    transition: all 0.5s ease-out;
+
+    &-menu {
+      gap: 50px;
+
+      &__wrapper-left,
+      &__wrapper-right {
+        gap: 20px;
+      }
+    }
+  }
+}
+
+@include laptop {
+  .header-menu__item {
+    transition: all 0.5s ease-out;
+    font-size: $font-size_xl;
+    line-height: $font-size_s;
+  }
+  .signin__btn {
+    width: 80px;
+    height: 30px;
+  }
+  .header-menu,
+  .header-menu__wrapper-left,
+  .header-menu__wrapper-right {
+    gap: 10px;
+  }
+}
+
+@include table {
+  .header {
+    max-width: 90%;
+    gap: 15px;
+
+    &-menu__item {
+    transition: all 0.5s ease-out;
+    font-size: $font-size_m-2;
+    line-height: $font-size_ml;
+  }
+  }
+  .header,
+  .header-menu,
+  .header-menu__wrapper-left,
+  .header-menu__wrapper-right {
+    flex-direction: column;
+    align-items: start;
+  }
+  .signin__btn {
+    width: 100%;
   }
 }
