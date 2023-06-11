@@ -18,7 +18,10 @@
 
 .slider-img {
   background: url(../img/contentIMG.png) no-repeat;
+  background-position: center;
+  background-size: cover;
   min-height: 595px;
+  max-width: 100%;
   position: relative;
   z-index: 1;
   justify-content: end;
@@ -38,8 +41,6 @@
 
 .slider-box {
   margin: 0 auto;
-  justify-content: center;
-  position: absolute;
   right: 24.5%;
   top: 58%;
 }
@@ -70,6 +71,7 @@
   align-items: center;
   gap: 10px;
   padding-bottom: 18px;
+  padding-top: 20px;
 }
 .slider-play__btn-icon {
   background: url(../img/icon/playICON.png) no-repeat 60%/12px 14px rgba(255, 255, 255, 0.1);
@@ -84,4 +86,25 @@
   color: rgb(255, 255, 255);
   font-family: "Lato", sans-serif;
   font-style: normal;
+}
+
+@media (max-width: 1280px) {
+  .slider {
+    max-width: 100%;
+    transition: all 0.5s ease-out;
+  }
+}
+@media (max-width: 1024px) {
+  .slider-box {
+    width: 90%;
+  }
+  .slider-box__logo {
+    width: 100%;
+  }
+  .slider-scrollLine {
+    width: 100%;
+  }
+  .slider-scrollLine_activ {
+    width: 33%;
+  }
 }/*# sourceMappingURL=slider.css.map */

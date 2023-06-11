@@ -2,6 +2,8 @@
 @import "../variables/typography.scss";
 @import "../variables/colors.scss";
 @import "../styles/extend/font.scss";
+@import "../styles/mixin/media_breakpoints.scss";
+@import "../variables/breakpoints.scss";
 
 .slider {
   max-width: 1274px;
@@ -12,7 +14,10 @@
 
 .slider-img {
   background: url(../img/contentIMG.png) no-repeat;
+  background-position: center;
+  background-size: cover;
   min-height: 595px;
+  max-width: 100%;
   position: relative;
   z-index: 1;
   justify-content: end;
@@ -31,8 +36,8 @@
 
 .slider-box {
   margin: 0 auto;
-  justify-content: center;
-  position: absolute;
+  // justify-content: center;
+  // position: absolute;
   right: 24.5%;
   top: 58%;
 
@@ -74,6 +79,7 @@
   align-items: center;
   gap: 10px;
   padding-bottom: 18px;
+  padding-top: 20px;
 
   &:hover {
     @extend %hover-effect-item-active;
@@ -96,3 +102,52 @@
     font-style: $font-style_default;
   }
 }
+@include desktop {
+  .slider {
+    max-width: 100%;
+    transition: all 0.5s ease-out;
+  }
+}
+
+@include laptop {
+.slider-box{
+  width: 90%;
+
+  &__logo{
+  width: 100%;
+  }
+}
+.slider-scrollLine{
+  width: 100%;
+
+  &_activ{
+    width: 33%;
+  }
+}
+}
+
+// @include table {
+//   .header {
+//     max-width: 90%;
+//     gap: 15px;
+
+//     &-menu__item {
+//       transition: all 0.5s ease-out;
+//       font-size: $font-size_m-2;
+//       line-height: $font-size_ml;
+//     }
+//     &__burger {
+//       display: block;
+//     }
+//   }
+//   .header,
+//   .header-menu,
+//   .header-menu__wrapper-left,
+//   .header-menu__wrapper-right {
+//     flex-direction: column;
+//     align-items: start;
+//   }
+//   .signin__btn {
+//     width: 100%;
+//   }
+// }
