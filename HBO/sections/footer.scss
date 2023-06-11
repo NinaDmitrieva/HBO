@@ -2,6 +2,8 @@
 @import "../variables/typography.scss";
 @import "../variables/colors.scss";
 @import "../styles/extend/font.scss";
+@import "../styles/mixin/media_breakpoints.scss";
+@import "../variables/breakpoints.scss";
 
 .footer {
   justify-content: space-between;
@@ -44,6 +46,8 @@
 }
 .footer-navMenu {
   background: url(../img/footerBgr.png);
+    background-position: center;
+  background-size: cover;
   width: 427px;
   height: 286px;
   flex-direction: column;
@@ -94,9 +98,9 @@
       @extend %hover-effect-nav-item;
     }
   }
-  &__logo:hover{
-      @extend %hover-effect-nav-item;
-    }
+  &__logo:hover {
+    @extend %hover-effect-nav-item;
+  }
   &__logo-img {
     width: 63px;
     height: 26px;
@@ -122,5 +126,25 @@
   }
   &__link:hover {
     @extend %hover-effect-nav-item;
+  }
+}
+
+@include laptop {
+  .footer {
+    max-width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@include table {
+  .footer-navMenu {
+    width: 100%;
+
+    &__menu {
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 }

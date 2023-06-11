@@ -1503,6 +1503,8 @@ main {
 
 .footer-navMenu {
   background: url(../img/footerBgr.png);
+  background-position: center;
+  background-size: cover;
   width: 427px;
   height: 286px;
   flex-direction: column;
@@ -1567,4 +1569,21 @@ main {
   margin-bottom: 13px;
   font-size: 12px;
   align-self: end;
+}
+@media (max-width: 1024px) {
+  .footer {
+    max-width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .footer-navMenu {
+    width: 100%;
+  }
+  .footer-navMenu__menu {
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=index.css.map */
