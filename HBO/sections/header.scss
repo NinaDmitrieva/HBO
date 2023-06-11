@@ -32,6 +32,35 @@
       }
     }
   }
+
+  &__burger {
+    display: none;
+    .burger-menu_lines::before,
+    .burger-menu_lines::after,
+    .burger-menu_lines {
+      position: absolute;
+      width: 40px;
+      height: 3px;
+      background-color: $color__primary;
+      border-radius: 20px;
+    }
+    .burger-menu_lines {
+      top: 12%;
+      left: 90%;
+      transform: translate(-50%, -50%);
+    }
+    .burger-menu_lines::before {
+      content: "";
+      top: -12px;
+    }
+    .burger-menu_lines::after {
+      content: "";
+      top: 12px;
+    }
+    &:hover {
+      @extend %hover-effect-nav-item;
+    }
+  }
 }
 .header-menu__wrapper-left {
   gap: 43px;
@@ -96,10 +125,13 @@
     gap: 15px;
 
     &-menu__item {
-    transition: all 0.5s ease-out;
-    font-size: $font-size_m-2;
-    line-height: $font-size_ml;
-  }
+      transition: all 0.5s ease-out;
+      font-size: $font-size_m-2;
+      line-height: $font-size_ml;
+    }
+    &__burger {
+      display: block;
+    }
   }
   .header,
   .header-menu,

@@ -28,7 +28,7 @@ main {
   transition: all 0.3s ease-out;
 }
 
-.footer-logo__link:hover, .footer-navMenu__logo:hover, .footer-navMenu__addConditions-link:hover, .footer-navMenu__menu-link:hover, .footer-link:hover, .arrow__svg:hover, .header-menu__item:hover {
+.footer-logo__link:hover, .footer-navMenu__logo:hover, .footer-navMenu__addConditions-link:hover, .footer-navMenu__menu-link:hover, .footer-link:hover, .arrow__svg:hover, .header__burger:hover, .header-menu__item:hover {
   cursor: pointer;
   opacity: 0.5;
   color: rgb(255, 255, 255);
@@ -84,6 +84,30 @@ main {
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
+}
+.header__burger {
+  display: none;
+}
+.header__burger .burger-menu_lines::before,
+.header__burger .burger-menu_lines::after,
+.header__burger .burger-menu_lines {
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+}
+.header__burger .burger-menu_lines {
+  top: 12%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
+.header__burger .burger-menu_lines::before {
+  content: "";
+  top: -12px;
+}
+.header__burger .burger-menu_lines::after {
+  content: "";
+  top: 12px;
 }
 .header-menu__wrapper-left {
   gap: 43px;
@@ -142,6 +166,9 @@ main {
     font-size: 16px;
     line-height: 18px;
   }
+  .header__burger {
+    display: block;
+  }
   .header,
   .header-menu,
   .header-menu__wrapper-left,
@@ -159,7 +186,7 @@ main {
   transition: all 0.3s ease-out;
 }
 
-.footer-logo__link:hover, .footer-navMenu__logo:hover, .footer-navMenu__addConditions-link:hover, .footer-navMenu__menu-link:hover, .footer-link:hover, .arrow__svg:hover, .header-menu__item:hover {
+.footer-logo__link:hover, .footer-navMenu__logo:hover, .footer-navMenu__addConditions-link:hover, .footer-navMenu__menu-link:hover, .footer-link:hover, .arrow__svg:hover, .header-menu__item:hover, .header__burger:hover {
   cursor: pointer;
   opacity: 0.5;
   color: rgb(255, 255, 255);
@@ -383,7 +410,7 @@ main {
   transition: all 0.3s ease-out;
 }
 
-.footer-logo__link:hover, .footer-navMenu__logo:hover, .footer-navMenu__addConditions-link:hover, .footer-navMenu__menu-link:hover, .footer-link:hover, .arrow__svg:hover, .header-menu__item:hover {
+.footer-logo__link:hover, .footer-navMenu__logo:hover, .footer-navMenu__addConditions-link:hover, .footer-navMenu__menu-link:hover, .footer-link:hover, .arrow__svg:hover, .header-menu__item:hover, .header__burger:hover {
   cursor: pointer;
   opacity: 0.5;
   color: rgb(255, 255, 255);
@@ -531,7 +558,7 @@ main {
   transition: all 0.3s ease-out;
 }
 
-.footer-logo__link:hover, .footer-navMenu__logo:hover, .footer-navMenu__addConditions-link:hover, .footer-navMenu__menu-link:hover, .footer-link:hover, .arrow__svg:hover, .header-menu__item:hover {
+.footer-logo__link:hover, .footer-navMenu__logo:hover, .footer-navMenu__addConditions-link:hover, .footer-navMenu__menu-link:hover, .footer-link:hover, .arrow__svg:hover, .header-menu__item:hover, .header__burger:hover {
   cursor: pointer;
   opacity: 0.5;
   color: rgb(255, 255, 255);
@@ -718,7 +745,7 @@ main {
   transition: all 0.3s ease-out;
 }
 
-.footer-logo__link:hover, .footer-navMenu__logo:hover, .footer-navMenu__addConditions-link:hover, .footer-navMenu__menu-link:hover, .footer-link:hover, .arrow__svg:hover, .header-menu__item:hover {
+.footer-logo__link:hover, .footer-navMenu__logo:hover, .footer-navMenu__addConditions-link:hover, .footer-navMenu__menu-link:hover, .footer-link:hover, .arrow__svg:hover, .header-menu__item:hover, .header__burger:hover {
   cursor: pointer;
   opacity: 0.5;
   color: rgb(255, 255, 255);
@@ -908,7 +935,7 @@ main {
   transition: all 0.3s ease-out;
 }
 
-.footer-logo__link:hover, .footer-navMenu__logo:hover, .footer-navMenu__addConditions-link:hover, .footer-navMenu__menu-link:hover, .footer-link:hover, .arrow__svg:hover, .header-menu__item:hover {
+.footer-logo__link:hover, .footer-navMenu__logo:hover, .footer-navMenu__addConditions-link:hover, .footer-navMenu__menu-link:hover, .footer-link:hover, .arrow__svg:hover, .header-menu__item:hover, .header__burger:hover {
   cursor: pointer;
   opacity: 0.5;
   color: rgb(255, 255, 255);
@@ -1132,7 +1159,7 @@ main {
   transition: all 0.3s ease-out;
 }
 
-.footer-logo__link:hover, .footer-navMenu__logo:hover, .footer-navMenu__addConditions-link:hover, .footer-navMenu__menu-link:hover, .footer-link:hover, .arrow__svg:hover, .header-menu__item:hover {
+.footer-logo__link:hover, .footer-navMenu__logo:hover, .footer-navMenu__addConditions-link:hover, .footer-navMenu__menu-link:hover, .footer-link:hover, .arrow__svg:hover, .header-menu__item:hover, .header__burger:hover {
   cursor: pointer;
   opacity: 0.5;
   color: rgb(255, 255, 255);
@@ -1349,7 +1376,7 @@ main {
   transition: all 0.3s ease-out;
 }
 
-.footer-logo__link:hover, .footer-navMenu__logo:hover, .footer-navMenu__addConditions-link:hover, .footer-navMenu__menu-link:hover, .footer-link:hover, .header-menu__item:hover, .arrow__svg:hover {
+.footer-logo__link:hover, .footer-navMenu__logo:hover, .footer-navMenu__addConditions-link:hover, .footer-navMenu__menu-link:hover, .footer-link:hover, .header-menu__item:hover, .header__burger:hover, .arrow__svg:hover {
   cursor: pointer;
   opacity: 0.5;
   color: rgb(255, 255, 255);
