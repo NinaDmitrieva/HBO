@@ -11,5 +11,14 @@ const toggleBurgerMenu = (e) => {
     // overlay.style.opacity = "0.4";
     // header.style.opacity = '1';
 }
+function get_scroll(a) { //что по скроллу
+    var d = document,
+        b = d.body,
+        e = d.documentElement,
+        c = "client" + a;
+    a = "scroll" + a;
+    return /CSS/.test(d.compatMode) ? (e[c] < e[a]) : (b[c] < b[a])
+};
+console.log(get_scroll('Width'))
 
 burgerBTN.addEventListener('click', toggleBurgerMenu)

@@ -64,8 +64,8 @@
 .card-item {
   cursor: pointer;
   position: relative;
-  width: 502px;
-  height: 296px;
+  max-width: 502px;
+  max-height: 296px;
   border-radius: 12px;
   padding: 32px;
   display: flex;
@@ -121,4 +121,42 @@
 
 .btn-activ {
   background: rgb(227, 177, 0);
+}
+
+@media (max-width: 1280px) {
+  .subscription {
+    width: 90%;
+  }
+  .card-list {
+    transition: all 0.5s ease-out;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .card-item {
+    align-self: center;
+  }
+  .item-left {
+    left: 0;
+  }
+  .item-right {
+    right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .subscription {
+    margin: 0 auto;
+  }
+  .card-item {
+    max-width: 100%;
+  }
+  .card-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .btn {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 17px;
+  }
 }/*# sourceMappingURL=subscription.css.map */

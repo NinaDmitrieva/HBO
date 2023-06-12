@@ -2,6 +2,8 @@
 @import "../variables/typography.scss";
 @import "../variables/colors.scss";
 @import "../styles/extend/font.scss";
+@import "../styles/mixin/media_breakpoints.scss";
+@import "../variables/breakpoints.scss";
 
 .subscription {
   margin: 60px auto 32px;
@@ -66,8 +68,8 @@
 .card-item {
   cursor: pointer;
   position: relative;
-  width: 502px;
-  height: 296px;
+  max-width: 502px;
+  max-height: 296px;
   border-radius: 12px;
   padding: 32px;
   display: flex;
@@ -125,4 +127,42 @@
 }
 .btn-activ {
   background: $item-color-active;
+}
+
+@include desktop {
+  .subscription {
+    width: 90%;
+  }
+  .card-list {
+    transition: all 0.5s ease-out;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .card-item {
+    align-self: center;
+  }
+  .item-left {
+    left: 0;
+  }
+  .item-right {
+    right: 0;
+  }
+}
+@include table {
+    .subscription {
+    margin: 0 auto;;
+  }
+  .card-item {
+    max-width: 100%;
+  }
+  .card-title {
+    font-weight: $font-weight_m;
+    font-size: $font-size_m-2;
+    line-height: $line-height_m-2;
+  }
+  .btn {
+    font-weight: $font-weight_m;
+    font-size: $font-size_s;
+    line-height: $line-height_m;
+  }
 }
