@@ -111,6 +111,11 @@
   font-size: 12px;
   align-self: end;
 }
+@media (max-width: 1280px) {
+  .footer {
+    max-width: 90%;
+  }
+}
 @media (max-width: 1024px) {
   .footer {
     max-width: 100%;

@@ -46,7 +46,7 @@
 }
 .footer-navMenu {
   background: url(../img/footerBgr.png);
-    background-position: center;
+  background-position: center;
   background-size: cover;
   width: 427px;
   height: 286px;
@@ -126,6 +126,12 @@
   }
   &__link:hover {
     @extend %hover-effect-nav-item;
+  }
+}
+
+@include desktop {
+  .footer {
+    max-width: 90%;
   }
 }
 

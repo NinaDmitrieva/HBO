@@ -98,7 +98,7 @@ main {
   border-radius: 20px;
 }
 .header__burger .burger-menu_lines {
-  top: 12%;
+  top: 5%;
   left: 90%;
   transform: translate(-50%, -50%);
 }
@@ -129,9 +129,13 @@ main {
   font-weight: 700;
   color: #fff;
 }
+.hide {
+  display: none;
+}
+
 @media (max-width: 1280px) {
   .header {
-    max-width: 70%;
+    max-width: 90%;
     transition: all 0.5s ease-out;
   }
   .header-menu {
@@ -762,6 +766,18 @@ main {
   color: #fff;
 }
 
+@media (max-width: 1280px) {
+  .movies {
+    width: 90%;
+    padding-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .movies {
+    width: 100%;
+    padding: 40px 5px;
+  }
+}
 .header-logo:hover, .card__btn-choose:hover {
   cursor: pointer;
   opacity: 0.5;
@@ -1569,6 +1585,11 @@ main {
   margin-bottom: 13px;
   font-size: 12px;
   align-self: end;
+}
+@media (max-width: 1280px) {
+  .footer {
+    max-width: 90%;
+  }
 }
 @media (max-width: 1024px) {
   .footer {

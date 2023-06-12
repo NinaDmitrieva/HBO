@@ -50,7 +50,7 @@
   border-radius: 20px;
 }
 .header__burger .burger-menu_lines {
-  top: 12%;
+  top: 5%;
   left: 90%;
   transform: translate(-50%, -50%);
 }
@@ -81,9 +81,13 @@
   font-weight: 700;
   color: #fff;
 }
+.hide {
+  display: none;
+}
+
 @media (max-width: 1280px) {
   .header {
-    max-width: 70%;
+    max-width: 90%;
     transition: all 0.5s ease-out;
   }
   .header-menu {

@@ -2,6 +2,8 @@
 @import "../variables/typography.scss";
 @import "../variables/colors.scss";
 @import "../styles/extend/font.scss";
+@import "../variables/breakpoints.scss";
+@import "../styles/mixin/media_breakpoints.scss";
 
 .movies {
   max-width: 1848px;
@@ -127,5 +129,18 @@
     font-size: $font-size_s;
     line-height: $font-size_m-2;
     color: $color_secondary;
+  }
+}
+@include desktop {
+  .movies {
+    width: 90%;
+    padding-left: 0;
+  }
+}
+
+@include table {
+  .movies {
+    width: 100%;
+    padding: 40px 5px;
   }
 }
