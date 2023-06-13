@@ -27,7 +27,7 @@
 
 .movieMenu {
   padding-left: 20px;
-  width: 1317px;
+  max-width: 1317px;
   padding-top: 46px;
   margin: 0 auto;
   flex-direction: column;
@@ -40,7 +40,7 @@
 }
 
 .film__list {
-  width: 1274px;
+  max-width: 1274px;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
@@ -146,7 +146,7 @@
 }
 
 .tv-shows-section {
-  width: 1317px;
+  max-width: 1317px;
   position: relative;
   margin-bottom: 30px;
 }
@@ -155,7 +155,7 @@
 }
 
 .movies-section {
-  width: 1317px;
+  max-width: 1317px;
   position: relative;
   margin-bottom: 30px;
 }
@@ -164,7 +164,7 @@
 }
 
 .cartoons-section {
-  width: 1317px;
+  max-width: 1317px;
   position: relative;
 }
 .cartoons-section__title {

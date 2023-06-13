@@ -5,11 +5,10 @@
 
 .movieMenu {
   padding-left: 20px;
-  width: 1317px;
+  max-width: 1317px;
   padding-top: 46px;
   margin: 0 auto;
   flex-direction: column;
-  // gap: 30px;
 }
 .section__wrapper {
   width: 100%;
@@ -18,7 +17,7 @@
 }
 
 .film__list {
-  width: 1274px;
+  max-width: 1274px;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
@@ -139,7 +138,7 @@
 }
 
 .tv-shows-section {
-  width: 1317px;
+  max-width: 1317px;
   position: relative;
   //   display: flex;
   //   flex-wrap: nowrap;
@@ -152,7 +151,7 @@
 }
 
 .movies-section {
-  width: 1317px;
+  max-width: 1317px;
   position: relative;
   margin-bottom: 30px;
   &__title {
@@ -162,10 +161,12 @@
 }
 
 .cartoons-section {
-  width: 1317px;
+  max-width: 1317px;
   position: relative;
   &__title {
     @extend %font-h1;
     padding-bottom: 20px;
   }
 }
+
+

@@ -1,6 +1,8 @@
 @import "./colors.scss";
 @import "./typography.scss";
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   max-width: 1920px;
   background: $bg-color_accent;
@@ -23,3 +25,4 @@ main {
 .flex {
   display: flex;
 }
+
