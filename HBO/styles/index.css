@@ -409,6 +409,54 @@ main {
   padding-bottom: 55px;
 }
 
+@media (max-width: 1280px) {
+  .signin {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .signin__wrapper {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .card {
+    align-self: center;
+    margin: 10px 0 10px;
+  }
+}
+@media (max-width: 1024px) {
+  .signin__form {
+    width: 100%;
+  }
+  .checkbox__btn-submit {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .signin {
+    padding: 5px;
+  }
+  .signin__subtitle {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .card {
+    width: 90%;
+  }
+  .card__title {
+    font-size: 16px;
+    line-height: 17px;
+  }
+}
+@media (max-width: 500px) {
+  .signin__subtitle {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .card {
+    padding: 5px;
+  }
+}
 .header-logo:hover, .card__btn-choose:hover {
   cursor: pointer;
   opacity: 0.5;
@@ -1233,6 +1281,54 @@ main {
   padding-bottom: 55px;
 }
 
+@media (max-width: 1280px) {
+  .signin {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .signin__wrapper {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .card {
+    align-self: center;
+    margin: 10px 0 10px;
+  }
+}
+@media (max-width: 1024px) {
+  .signin__form {
+    width: 100%;
+  }
+  .checkbox__btn-submit {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .signin {
+    padding: 5px;
+  }
+  .signin__subtitle {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .card {
+    width: 90%;
+  }
+  .card__title {
+    font-size: 16px;
+    line-height: 17px;
+  }
+}
+@media (max-width: 500px) {
+  .signin__subtitle {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .card {
+    padding: 5px;
+  }
+}
 .header-logo:hover, .card__btn-choose:hover {
   cursor: pointer;
   opacity: 0.5;

@@ -1,7 +1,9 @@
 @import "../styles/extend/hover.scss";
-@import "../variables/typography.scss";
 @import "../variables/colors.scss";
 @import "../styles/extend/font.scss";
+@import "../variables/typography.scss";
+@import "../styles/mixin/media_breakpoints.scss";
+@import "../variables/breakpoints.scss";
 
 .signin {
   width: 100%;
@@ -190,4 +192,56 @@
 .checkbox__btn-text__span {
   color: $font-color__accent;
   padding-bottom: 55px;
+}
+
+@include desktop {
+  .signin {
+    width: 90%;
+    margin: 0 auto;
+    &__wrapper {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  .card {
+    align-self: center;
+    margin: 10px 0 10px;
+  }
+}
+
+@include laptop {
+  .signin__form{
+    width: 100%;
+  }
+  .checkbox__btn-submit{
+    width: 100%;
+  }
+}
+
+@include table {
+  .signin {
+    padding: 5px;
+
+    &__subtitle {
+      font-weight: $font-weight_l;
+      font-size: $font-size_l2;
+      line-height: $line-height_lm;
+    }
+  }
+  .card {
+    width: 90%;
+  }
+  .card__title {
+    font-size: $font-size_m-2;
+    line-height: $line-height_m;
+  }
+}
+@include mobile {
+  .signin__subtitle {
+    font-size: $font-size_m-2;
+    line-height: $line-height_m-2;
+  }
+  .card {
+    padding: 5px;
+  }
 }
