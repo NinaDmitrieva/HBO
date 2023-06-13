@@ -146,11 +146,20 @@
   }
   .item-right {
     right: 0;
+
+    &::before {
+      content: "";
+      background: linear-gradient(
+        -90deg,
+        #000000 0%,
+        rgba(13, 0, 123, 0.25) 100%
+      );
+    }
   }
 }
 @include table {
-    .subscription {
-    margin: 0 auto;;
+  .subscription {
+    margin: 0 auto;
   }
   .card-item {
     max-width: 100%;

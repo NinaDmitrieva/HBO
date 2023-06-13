@@ -141,6 +141,10 @@
   .item-right {
     right: 0;
   }
+  .item-right::before {
+    content: "";
+    background: linear-gradient(-90deg, #000000 0%, rgba(13, 0, 123, 0.25) 100%);
+  }
 }
 @media (max-width: 768px) {
   .subscription {
