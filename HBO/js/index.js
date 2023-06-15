@@ -6,8 +6,9 @@ const signinBTN = document.querySelector('.signin__btn')
 const overlay = document.querySelector('.main');
 const modal = document.querySelector('.modal');
 const modalBtn = document.querySelector('.modal__btn');
-const showsContainer = document.querySelector('.shows');
-const showsTemplate = document.querySelector('#shows').content;
+const showsContainer = document.querySelector('.showsContainer');
+const moviesContainer = document.querySelector('.moviesContainer');
+const cartoonsContainer = document.querySelector('.cartoonsContainer');
 
 
 const toggleBurgerMenu = () => {
@@ -44,31 +45,63 @@ const handleEscClose = (e) => {
     }
 }
 
-const getMovieShow = () => {
-    const movieShow = movieList.filter(show => show.type === 'show')
+const getMovieShow = (arr, type) => {
+    const movieShow = arr.filter(show => show.type === type)
     return movieShow
 }
 
+const showMovieShow = (arr) => {
 
-const showMovieShow = () => {
-    getMovieShow().forEach(show => {
-        // клонируем содержимое 
-        const showElement = showsTemplate.querySelector('.movie-item').cloneNode(true);
+    arr.forEach(show => {
+        const showItem = `
+         <div class="movie-item">
+                    <img
+                      class="movie-item__img"
+                      src=${show.image}
+                      alt=${show.title}
+                    />
 
-        // наполняем содержимым
-        showElement.querySelector('.movie-item__img').src = show.image;
-        showElement.querySelector('.movie-item__img').alt = show.title;
-        showElement.querySelector('.movie-item__info-name').textContent = show.title;
-        showElement.querySelector('.rating-text').textContent = show.rating;
+                    <div class="movie-item__info">
+                      <div class="movie-item__info-header flex">
+                        <div class="rating-box flex">
+                          <img
+                            class="rating-icon"
+                            src="../HBO/img/icon/starICON.png"
+                          />
+                          <p class="rating-text">${show.rating}</p>
+                        </div>
 
-        showElement.querySelector('.movie-item__info-header__year').textContent = show.year;
-        showElement.querySelector('.movie-item__info-description').textContent = show.description;
-        showElement.querySelector('.watch-wrapper__text').href = show.trailer;
-        // отображаем на странице
-        showsContainer.append(showElement);
+                        <p class="movie-item__info-header__year">${show.year}</p>
+                      </div>
+
+                      <h2 class="movie-item__info-name">${show.title}</h2>
+                      <p class="movie-item__info-description">${show.description}</p>
+                      <div class="watch-wrapper flex">
+                        <img
+                          class="watch-wrapper__playIcon"
+                          src="../HBO/img/icon/playICON.png"
+                        />
+                        <a href=${show.trailer} target="_blank" class="watch-wrapper__text"
+                          >WATCH</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+        `
+        if (show.type === 'movie') {
+            moviesContainer.insertAdjacentHTML('beforeend', showItem)
+        } else if (show.type === 'show') {
+            showsContainer.insertAdjacentHTML('beforeend', showItem)
+        } else if (show.type === 'cartoon') {
+            cartoonsContainer.insertAdjacentHTML('beforeend', showItem)
+        }
     });
 }
-showMovieShow()
+showMovieShow(getMovieShow(movieList, 'movie'))
+showMovieShow(getMovieShow(movieList, 'show'))
+showMovieShow(getMovieShow(movieList, 'cartoon'))
+
+
 
 
 function get_scroll(a) { //что по скроллу
