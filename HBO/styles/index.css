@@ -26,6 +26,10 @@ main {
   display: flex;
 }
 
+.activ {
+  opacity: 1;
+}
+
 .card__btn-choose:hover, .header-logo:hover {
   cursor: pointer;
   opacity: 0.5;
@@ -62,6 +66,7 @@ main {
           backdrop-filter: blur(5px);
   transition: all 0.3s ease-out;
   opacity: 1;
+  z-index: 1000;
 }
 
 .watch-wrapper:hover {
@@ -246,6 +251,7 @@ main {
           backdrop-filter: blur(5px);
   transition: all 0.3s ease-out;
   opacity: 1;
+  z-index: 1000;
 }
 
 .watch-wrapper:hover {
@@ -253,289 +259,7 @@ main {
   transition: all 0.3s ease-out;
 }
 
-.content, .cartoons-section__title, .movies-section__title, .tv-shows-section__title, .subscription_title, .movies-title, .modal__title {
-  font-weight: 900;
-  font-size: 32px;
-  line-height: 38px;
-}
-
-.modal__subtitle {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 29px;
-}
-
-.card__title {
-  font-weight: 900;
-  font-size: 30px;
-  line-height: 36px;
-}
-
-.card__priсe {
-  font-size: 24px;
-  line-height: 29px;
-}
-
-.card__subtitle {
-  font-size: 16px;
-  line-height: 22px;
-}
-
-.open {
-  opacity: 1;
-  z-index: 1050;
-}
-
-.modal {
-  width: 90%;
-  padding-top: 50px;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  background: center/cover no-repeat url(../img/signupBG.png) rgb(0, 0, 0);
-  position: fixed;
-  top: 20%;
-  left: 5vw;
-  opacity: 0;
-  transition: opacity 200ms ease-in;
-}
-.modal__title {
-  margin-bottom: 12px;
-}
-.modal__wrapper {
-  gap: 35px;
-  justify-content: center;
-}
-
-.card__activ-svg {
-  opacity: 0;
-  width: 38px;
-  height: 38px;
-  position: absolute;
-  top: -5%;
-  left: 95%;
-}
-.card__activ-svg__activ {
-  opacity: 1;
-}
-
-.card {
-  height: 250px;
-  position: relative;
-  margin: 32px 0 32px;
-  width: 502px;
-  height: 250px;
-  background: linear-gradient(90deg, rgba(0, 89, 193, 0.5) 0%, rgba(13, 0, 123, 0.5) 100%);
-  border-radius: 12px;
-  padding: 32px;
-  flex-direction: column;
-}
-.card__activ {
-  border: 1px solid rgba(0, 89, 193, 0.5);
-}
-.card__wrapper {
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 30px;
-}
-.card__subtitle {
-  text-align: start;
-}
-.card__subtitle-position {
-  height: 48px;
-  margin-bottom: 2px;
-}
-.card__btn-choose {
-  margin-top: 27px;
-  width: 93px;
-  height: 40px;
-  background: #e38b00;
-  border-radius: 12px;
-  font-size: 18px;
-  line-height: 22px;
-  color: #fff;
-  align-self: flex-end;
-}
-.signin__form {
-  flex-direction: column;
-  width: 733px;
-  margin: 24px auto 0;
-  gap: 24px;
-  text-align: start;
-}
-.signin__form-user-name {
-  width: 100%;
-  gap: 32px;
-}
-.signin__form-input {
-  width: 50%;
-  background: none;
-  border: none;
-  border-bottom: 2px solid rgb(217, 217, 217);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  color: rgba(255, 255, 255, 0.5);
-  padding-bottom: 11px;
-  /*focus*/
-}
-.signin__form-input:focus {
-  outline: none;
-  border-bottom: 1px solid #e38b00;
-}
-.signin__form-input-email, .signin__form-input-password {
-  width: 100%;
-}
-.signin__form-input-checkbox {
-  border-bottom: none;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  position: absolute;
-  /*checked*/
-  /*focus*/
-}
-.signin__form-input-checkbox:checked + .input-checkbox__icon {
-  background-color: rgb(255, 255, 255);
-}
-.signin__form-input-checkbox:focus + .input-checkbox__icon {
-  border: 2px solid #e38b00;
-}
-
-.checkbox {
-  display: flex;
-  justify-content: start;
-  padding-left: 35px;
-  align-items: center;
-  cursor: pointer;
-  font-size: 14px;
-  line-height: 17px;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.input-checkbox__icon {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  margin-left: -35px;
-  border: 1px solid #d9d9d9;
-  border-radius: 4px;
-}
-
-.checkbox__btn-submit {
-  width: 100%;
-  width: 733px;
-  height: 40px;
-  background: #0059c1;
-  border-radius: 12px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 18px;
-  color: #fff;
-}
-.checkbox__btn-text {
-  margin-top: -8px;
-  font-size: 12px;
-  line-height: 13px;
-}
-
-.checkbox__btn-text__span {
-  color: rgb(227, 139, 0);
-  padding-bottom: 55px;
-}
-
-@media (max-width: 1280px) {
-  .signin {
-    width: 90%;
-    margin: 0 auto;
-  }
-  .signin__wrapper {
-    flex-direction: column;
-    gap: 15px;
-  }
-  .card {
-    align-self: center;
-    margin: 10px 0 10px;
-  }
-}
-@media (max-width: 1024px) {
-  .signin__form {
-    width: 100%;
-  }
-  .checkbox__btn-submit {
-    width: 100%;
-  }
-}
-@media (max-width: 768px) {
-  .signin {
-    padding: 5px;
-  }
-  .signin__subtitle {
-    font-weight: 900;
-    font-size: 30px;
-    line-height: 36px;
-  }
-  .card {
-    width: 90%;
-  }
-  .card__title {
-    font-size: 16px;
-    line-height: 17px;
-  }
-}
-@media (max-width: 500px) {
-  .signin__subtitle {
-    font-size: 16px;
-    line-height: 19px;
-  }
-  .card {
-    padding: 5px;
-  }
-}
-.header-logo:hover, .card__btn-choose:hover {
-  cursor: pointer;
-  opacity: 0.5;
-  transition: all 0.3s ease-out;
-}
-
-.footer-logo__link:hover, .footer-navMenu__logo:hover, .footer-navMenu__addConditions-link:hover, .footer-navMenu__menu-link:hover, .footer-link:hover, .arrow__svg:hover, .header-menu__item:hover, .header__burger:hover {
-  cursor: pointer;
-  opacity: 0.5;
-  color: rgb(255, 255, 255);
-  transition: all 0.3s ease-out;
-}
-
-.signin__btn:hover, .checkbox__btn-submit:hover {
-  cursor: pointer;
-  background: #1274e5;
-  transition: all 0.3s ease-out;
-}
-
-.slider-scrollLine:hover {
-  cursor: pointer;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-  transition: all 0.3s ease-out;
-}
-
-.slider-play__btn:hover, .slider-scrollLine__activ:hover {
-  opacity: 0.8;
-  transition: all 0.3s ease-out;
-}
-
-.movie-item__info:hover {
-  background: linear-gradient(90deg, #000000 0%, rgba(13, 0, 123, 0.25) 100%); /*сделала фон темене, что б лучше был виден таекст на белых фонах*/
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-  transition: all 0.3s ease-out;
-  opacity: 1;
-}
-
-.watch-wrapper:hover {
-  box-shadow: 0 0 10px 0 rgb(227, 177, 0) inset, 0 0 10px 2px rgb(229, 203, 110);
-  transition: all 0.3s ease-out;
-}
-
-.content, .cartoons-section__title, .movies-section__title, .tv-shows-section__title, .subscription_title, .movies-title, .modal__title {
+.content, .cartoons-section__title, .movies-section__title, .tv-shows-section__title, .modal__title, .subscription_title, .movies-title {
   font-weight: 900;
   font-size: 32px;
   line-height: 38px;
@@ -662,7 +386,7 @@ main {
     width: 33%;
   }
 }
-.header-logo:hover, .card__btn-choose:hover {
+.card__btn-choose:hover, .header-logo:hover {
   cursor: pointer;
   opacity: 0.5;
   transition: all 0.3s ease-out;
@@ -675,7 +399,7 @@ main {
   transition: all 0.3s ease-out;
 }
 
-.signin__btn:hover, .checkbox__btn-submit:hover {
+.checkbox__btn-submit:hover, .signin__btn:hover {
   cursor: pointer;
   background: #1274e5;
   transition: all 0.3s ease-out;
@@ -698,6 +422,7 @@ main {
           backdrop-filter: blur(5px);
   transition: all 0.3s ease-out;
   opacity: 1;
+  z-index: 1000;
 }
 
 .watch-wrapper:hover {
@@ -705,7 +430,7 @@ main {
   transition: all 0.3s ease-out;
 }
 
-.content, .cartoons-section__title, .movies-section__title, .tv-shows-section__title, .subscription_title, .movies-title, .modal__title {
+.content, .cartoons-section__title, .movies-section__title, .tv-shows-section__title, .modal__title, .subscription_title, .movies-title {
   font-weight: 900;
   font-size: 32px;
   line-height: 38px;
@@ -773,7 +498,7 @@ main {
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 1px;
+  top: 0px;
   padding: 20px 20px 20px;
   opacity: 0;
   border-radius: 12px;
@@ -825,7 +550,10 @@ main {
   font-size: 11px;
   line-height: 13px;
   color: #e8e8e8;
-  padding-bottom: 48px;
+  padding-bottom: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 80px;
 }
 
 .watch-wrapper {
@@ -861,7 +589,7 @@ main {
     padding: 40px 5px;
   }
 }
-.header-logo:hover, .card__btn-choose:hover {
+.card__btn-choose:hover, .header-logo:hover {
   cursor: pointer;
   opacity: 0.5;
   transition: all 0.3s ease-out;
@@ -874,7 +602,7 @@ main {
   transition: all 0.3s ease-out;
 }
 
-.signin__btn:hover, .checkbox__btn-submit:hover {
+.checkbox__btn-submit:hover, .signin__btn:hover {
   cursor: pointer;
   background: #1274e5;
   transition: all 0.3s ease-out;
@@ -897,6 +625,7 @@ main {
           backdrop-filter: blur(5px);
   transition: all 0.3s ease-out;
   opacity: 1;
+  z-index: 1000;
 }
 
 .watch-wrapper:hover {
@@ -904,7 +633,7 @@ main {
   transition: all 0.3s ease-out;
 }
 
-.content, .cartoons-section__title, .movies-section__title, .tv-shows-section__title, .subscription_title, .modal__title, .movies-title {
+.content, .cartoons-section__title, .movies-section__title, .tv-shows-section__title, .modal__title, .subscription_title, .movies-title {
   font-weight: 900;
   font-size: 32px;
   line-height: 38px;
@@ -1092,7 +821,7 @@ main {
     line-height: 17px;
   }
 }
-.header-logo:hover, .card__btn-choose:hover {
+.card__btn-choose:hover, .header-logo:hover {
   cursor: pointer;
   opacity: 0.5;
   transition: all 0.3s ease-out;
@@ -1105,7 +834,7 @@ main {
   transition: all 0.3s ease-out;
 }
 
-.signin__btn:hover, .checkbox__btn-submit:hover {
+.checkbox__btn-submit:hover, .signin__btn:hover {
   cursor: pointer;
   background: #1274e5;
   transition: all 0.3s ease-out;
@@ -1128,6 +857,7 @@ main {
           backdrop-filter: blur(5px);
   transition: all 0.3s ease-out;
   opacity: 1;
+  z-index: 1000;
 }
 
 .watch-wrapper:hover {
@@ -1169,17 +899,19 @@ main {
 }
 
 .modal {
-  width: 90%;
-  padding-top: 50px;
+  padding: 5px;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   background: center/cover no-repeat url(../img/signupBG.png) rgb(0, 0, 0);
   position: fixed;
-  top: 20%;
-  left: 5vw;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   opacity: 0;
   transition: opacity 200ms ease-in;
+  border-radius: 10px;
+  min-width: 290px;
 }
 .modal__title {
   margin-bottom: 12px;
@@ -1187,6 +919,23 @@ main {
 .modal__wrapper {
   gap: 35px;
   justify-content: center;
+}
+.modal__btn {
+  position: absolute;
+  top: -7%;
+  left: 100%;
+  background: yellow;
+  color: black;
+  border-radius: 60%;
+  padding: 5px 10px;
+  border: 1px solid;
+  cursor: pointer;
+}
+.modal__btn:hover {
+  background: rgba(0, 34, 255, 0.893);
+  transition: all 0.3s ease-out;
+  color: white;
+  border: 1px solid wheat;
 }
 
 .card__activ-svg {
@@ -1373,6 +1122,9 @@ main {
   .card {
     padding: 5px;
   }
+  .modal__btn {
+    left: 90%;
+  }
 }
 .header-logo:hover, .card__btn-choose:hover {
   cursor: pointer;
@@ -1410,6 +1162,7 @@ main {
           backdrop-filter: blur(5px);
   transition: all 0.3s ease-out;
   opacity: 1;
+  z-index: 1000;
 }
 
 .watch-wrapper:hover {
@@ -1417,7 +1170,7 @@ main {
   transition: all 0.3s ease-out;
 }
 
-.content, .cartoons-section__title, .movies-section__title, .tv-shows-section__title, .modal__title, .movies-title, .subscription_title {
+.content, .cartoons-section__title, .movies-section__title, .tv-shows-section__title, .movies-title, .subscription_title, .modal__title {
   font-weight: 900;
   font-size: 32px;
   line-height: 38px;
@@ -1627,6 +1380,7 @@ main {
           backdrop-filter: blur(5px);
   transition: all 0.3s ease-out;
   opacity: 1;
+  z-index: 1000;
 }
 
 .watch-wrapper:hover {
@@ -1634,7 +1388,7 @@ main {
   transition: all 0.3s ease-out;
 }
 
-.content, .modal__title, .movies-title, .subscription_title, .tv-shows-section__title, .movies-section__title, .cartoons-section__title {
+.content, .movies-title, .subscription_title, .modal__title, .tv-shows-section__title, .movies-section__title, .cartoons-section__title {
   font-weight: 900;
   font-size: 32px;
   line-height: 38px;
@@ -1826,6 +1580,7 @@ main {
           backdrop-filter: blur(5px);
   transition: all 0.3s ease-out;
   opacity: 1;
+  z-index: 1000;
 }
 
 .watch-wrapper:hover {
@@ -1833,7 +1588,7 @@ main {
   transition: all 0.3s ease-out;
 }
 
-.content, .modal__title, .movies-title, .subscription_title, .tv-shows-section__title, .movies-section__title, .cartoons-section__title {
+.content, .movies-title, .subscription_title, .modal__title, .tv-shows-section__title, .movies-section__title, .cartoons-section__title {
   font-weight: 900;
   font-size: 32px;
   line-height: 38px;
@@ -1904,6 +1659,7 @@ main {
           backdrop-filter: blur(5px);
   transition: all 0.3s ease-out;
   opacity: 1;
+  z-index: 1000;
 }
 
 .watch-wrapper:hover {
@@ -1911,7 +1667,7 @@ main {
   transition: all 0.3s ease-out;
 }
 
-.modal__title, .movies-title, .subscription_title, .tv-shows-section__title, .movies-section__title, .cartoons-section__title, .content {
+.movies-title, .subscription_title, .modal__title, .tv-shows-section__title, .movies-section__title, .cartoons-section__title, .content {
   font-weight: 900;
   font-size: 32px;
   line-height: 38px;

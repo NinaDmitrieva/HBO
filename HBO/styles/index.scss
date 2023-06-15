@@ -1,16 +1,14 @@
 @import "../variables/res.css"; //сброс стилей
-@import "../variables/base.scss";//базовые переменные
-
+@import "../variables/base.scss"; //базовые переменные
 
 @import "../sections/header.scss";
-@import "../sections/signin.scss";
 @import "../sections/slider.scss";
 @import "../sections/movies.scss";
 @import "../sections/subscription.scss";
 
-@import "../sections/signin.scss"; //страница с регистрацией
-@import "../sections/movieMenu.scss"; 
-@import '../sections/footer.scss';
+@import "../sections/signinModal.scss"; //страница с регистрацией
+@import "../sections/movieMenu.scss";
+@import "../sections/footer.scss";
 
 @import "../sections/episodes.scss";
 @import "../sections/schedule.scss";

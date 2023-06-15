@@ -22,4 +22,8 @@ main {
 
 .flex {
   display: flex;
+}
+
+.activ {
+  opacity: 1;
 }/*# sourceMappingURL=base.css.map */

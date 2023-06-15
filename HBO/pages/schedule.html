@@ -24,18 +24,22 @@
           <div class="header-menu__wrapper-left flex">
             <a class="header-menu__item" href="#">SERIES</a>
             <a class="header-menu__item" href="#">MOVIES</a>
-             <a class="header-menu__item" href="#">CARTOONS</a>
+            <a class="header-menu__item" href="#">CARTOONS</a>
             <a class="header-menu__item" href="../pages/movieMenu.html"
               >SHOWS</a
             >
           </div>
 
           <div class="header-menu__wrapper-right flex">
-            <a class="header-menu__item" href="../pages/episodes.html">FREE EPISODES</a>
-            <a class="header-menu__item" href="../pages/schedule.html">SCHEDULE</a>
+            <a class="header-menu__item" href="../pages/episodes.html"
+              >FREE EPISODES</a
+            >
+            <a class="header-menu__item" href="../pages/schedule.html"
+              >SCHEDULE</a
+            >
           </div>
         </nav>
-        <a class="signin__btn flex" href="../pages/signUp.html">SIGN IN</a>
+        <a class="signin__btn flex" href="#">SIGN IN</a>
 
         <a href="" class="header__burger">
           <span class="burger-menu_lines"></span>
@@ -145,6 +149,35 @@
         </div>
       </section>
     </div>
-            <script type="module" src="../js/index.js"></script>
+    <script type="module" src="../js/index.js"></script>
+    <template id="shows">
+      <div class="movie-item">
+        <img class="movie-item__img" src="../HBO/img/filmitem.png" alt="film" />
+
+        <div class="movie-item__info">
+          <div class="movie-item__info-header flex">
+            <div class="rating-box flex">
+              <img class="rating-icon" src="../HBO/img/icon/starICON.png" />
+              <p class="rating-text">8.1</p>
+            </div>
+
+            <p class="movie-item__info-header__year">2022</p>
+          </div>
+
+          <h2 class="movie-item__info-name">House of the Dragon</h2>
+          <p class="movie-item__info-description">
+            An internal succession war within House Targaryen at the height of
+            its power, 172 years before the birth of Daenerys Targaryen.
+          </p>
+          <!-- <a href="#" target="_blank" class="watch-wrapper flex">
+                      <img
+                        class="watch-wrapper__playIcon"
+                        src="../HBO/img/icon/playICON.png"
+                      />
+                      <p class="watch-wrapper__text">WATCH</p>
+                    <a> -->
+        </div>
+      </div>
+    </template>
   </body>
 </html>
