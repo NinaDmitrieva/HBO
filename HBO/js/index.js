@@ -1,6 +1,5 @@
 import { data as movieList } from './data.js';
 
-const createBTN = document.querySelector('.checkbox__btn-submit')
 const burgerBTN = document.querySelector('.header__burger')
 const menuList = document.querySelector('.header-menu')
 const signinBTN = document.querySelector('.signin__btn')
@@ -12,7 +11,20 @@ const moviesContainer = document.querySelector('.moviesContainer');
 const cartoonsContainer = document.querySelector('.cartoonsContainer');
 const sliderItemImg = document.querySelector('.slider-img');
 const sliderItemTitle = document.querySelector('.slider-box__logo');
-
+const sliderList = [
+  {
+    backgroundImage: 'url(./img/movie1.png)',
+    titleSrc: './img/movie1logo.png'
+  },
+  {
+    backgroundImage: 'url(./img/movie2.png)',
+    titleSrc: './img/movie2logo.png'
+  },
+  {
+    backgroundImage: 'url(./img/movie3.png)',
+    titleSrc: './img/sliderLogo.png'
+  },
+]
 
 const toggleBurgerMenu = () => {
   menuList.classList.toggle('hide')
@@ -104,24 +116,12 @@ showMovieShow(getMovieShow(movieList, 'movie'))
 showMovieShow(getMovieShow(movieList, 'show'))
 showMovieShow(getMovieShow(movieList, 'cartoon'))
 
-const slider = () => {
- 
-}
-setInterval(() => {
-
-}, 5000)
-
-// sliderItemImg.style.backgroundImage = 'url(./img/movie1.png)'
-// sliderItemTitle.src = './img/movie1logo.png'
-
-sliderItemImg.style.backgroundImage = 'url(./img/movie2.png)'
-sliderItemTitle.src = './img/movie2logo.png'
-
-//sliderItemImg.style.backgroundImage = 'url(./img/movie3.png)'
-//sliderItemTitle.src = './img/sliderLogo.png'
-
-// console.log(sliderItemImg.style.backgroundImage)
-
+sliderList.forEach((item, i) => {
+  setInterval(() => {
+    sliderItemImg.style.backgroundImage = item.backgroundImage
+    sliderItemTitle.src = item.titleSrc
+  }, 4000 * (i + 1));
+})
 
 overlay.addEventListener('click', closeModal)
 burgerBTN.addEventListener('click', toggleBurgerMenu);
