@@ -106,10 +106,11 @@
   padding-bottom: 100px;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-height: 80px;
+  height: 80px;
 }
 
 .watch-wrapper {
+  margin-top: 30px;
   width: 170px;
   height: 38px;
   background: $btn-bg-color__primary;

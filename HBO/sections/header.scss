@@ -33,6 +33,10 @@
       }
     }
   }
+  .hide {
+  visibility: hidden;
+  transition: all 0.1s ease-out;
+}
 
   &__burger {
     display: none;
@@ -88,11 +92,6 @@
   }
 }
 
-.hide {
-  opacity: 0;
-  transition: all 0.5s ease-out;
-}
-
 @include desktop {
   .header {
     max-width: 90%;
@@ -135,6 +134,7 @@
       padding-left: 5px;
     }
     &-menu {
+      visibility: visible;
       position: absolute;
       top: 10%;
       background: $bg-color_accent;
@@ -149,10 +149,15 @@
       }
     }
     .signin__btn {
+      visibility: visible;
       position: absolute;
       top: 30%;
       z-index: 99;
       width: 100vw;
+    }
+    .hide {
+      visibility: hidden;
+      transition: all 0.1s ease-out;
     }
 
     &__burger {
@@ -170,4 +175,3 @@
     width: 100%;
   }
 }
-

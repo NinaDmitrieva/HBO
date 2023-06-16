@@ -26,8 +26,14 @@ main {
   display: flex;
 }
 
-.activ {
-  opacity: 1;
+.hide {
+  visibility: hidden;
+  transition: all 0.5s ease-out;
+}
+
+.blur {
+  filter: blur(4px);
+  transition: all 0.5s ease-out;
 }
 
 .card__btn-choose:hover, .header-logo:hover {
@@ -95,6 +101,10 @@ main {
   font-size: 13px;
   line-height: 16px;
 }
+.header .hide {
+  visibility: hidden;
+  transition: all 0.1s ease-out;
+}
 .header__burger {
   display: none;
 }
@@ -140,11 +150,6 @@ main {
   color: #fff;
   transition: all 0.5s ease-out;
 }
-.hide {
-  opacity: 0;
-  transition: all 0.5s ease-out;
-}
-
 @media (max-width: 1280px) {
   .header {
     max-width: 90%;
@@ -182,6 +187,7 @@ main {
     padding-left: 5px;
   }
   .header-menu {
+    visibility: visible;
     position: absolute;
     top: 10%;
     background: #000;
@@ -196,10 +202,15 @@ main {
     line-height: 18px;
   }
   .header .signin__btn {
+    visibility: visible;
     position: absolute;
     top: 30%;
     z-index: 99;
     width: 100vw;
+  }
+  .header .hide {
+    visibility: hidden;
+    transition: all 0.1s ease-out;
   }
   .header__burger {
     display: block;
@@ -295,7 +306,7 @@ main {
 }
 
 .slider-img {
-  background: url(../img/contentIMG.png) no-repeat;
+  background: url(../img//movie3.png) no-repeat;
   background-position: center;
   background-size: cover;
   min-height: 595px;
@@ -337,6 +348,7 @@ main {
   border-bottom: 1px solid rgb(227, 177, 0);
   width: 100px;
   position: absolute;
+  animation: progressbar 12s infinite;
 }
 .slider-play__btn {
   margin: 0 auto;
@@ -366,6 +378,14 @@ main {
   font-style: normal;
 }
 
+@keyframes progressbar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
 @media (max-width: 1280px) {
   .slider {
     max-width: 100%;
@@ -553,10 +573,11 @@ main {
   padding-bottom: 100px;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-height: 80px;
+  height: 80px;
 }
 
 .watch-wrapper {
+  margin-top: 30px;
   width: 170px;
   height: 38px;
   background: #0059c1;
@@ -899,6 +920,7 @@ main {
 }
 
 .modal {
+  visibility: hidden;
   padding: 5px;
   flex-direction: column;
   justify-content: center;
@@ -908,7 +930,6 @@ main {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0;
   transition: opacity 200ms ease-in;
   border-radius: 10px;
   min-width: 290px;
@@ -936,6 +957,11 @@ main {
   transition: all 0.3s ease-out;
   color: white;
   border: 1px solid wheat;
+}
+
+.activ {
+  visibility: visible;
+  transition: all 0.5s ease-out;
 }
 
 .card__activ-svg {

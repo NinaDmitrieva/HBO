@@ -13,7 +13,7 @@
 }
 
 .slider-img {
-  background: url(../img/contentIMG.png) no-repeat;
+  background: url(../img//movie3.png) no-repeat;
   background-position: center;
   background-size: cover;
   min-height: 595px;
@@ -36,8 +36,6 @@
 
 .slider-box {
   margin: 0 auto;
-  // justify-content: center;
-  // position: absolute;
   right: 24.5%;
   top: 58%;
 
@@ -61,6 +59,7 @@
     border-bottom: 1px solid $item-color-active;
     width: 100px;
     position: absolute;
+    animation: progressbar 12s infinite;
 
     &:hover {
       @extend %hover-effect-item-active;
@@ -102,6 +101,15 @@
     font-style: $font-style_default;
   }
 }
+@keyframes progressbar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
 @include desktop {
   .slider {
     max-width: 100%;

@@ -26,6 +26,12 @@ main {
   display: flex;
 }
 
-.activ {
-  opacity: 1;
+.hide {
+  visibility: hidden;
+  transition: all 0.5s ease-out;
+}
+
+.blur {
+  filter: blur(4px);
+  transition: all 0.5s ease-out;
 }
