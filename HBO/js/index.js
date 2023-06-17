@@ -14,7 +14,7 @@ const sliderItemTitle = document.querySelector('.slider-box__logo');
 const sliderList = [
   {
     backgroundImage: 'url(./img/movie1.png)',
-    titleSrc: './img/movie1logo.png'
+    titleSrc: './img/movie1Logo.png'
   },
   {
     backgroundImage: 'url(./img/movie2.png)',
@@ -127,6 +127,3 @@ overlay.addEventListener('click', closeModal)
 burgerBTN.addEventListener('click', toggleBurgerMenu);
 signinBTN.addEventListener('click', handleSign);
 modalBtn.addEventListener('click', closeModal)
-
-
-
