@@ -1,0 +1,35 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1920px;
+  background: #000;
+  color: rgb(255, 255, 255);
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  margin: 0 auto;
+}
+
+main {
+  width: 100%;
+}
+
+.page {
+  margin: 24px auto 32px;
+}
+
+.flex {
+  display: flex;
+}
+
+.hide {
+  visibility: hidden;
+  transition: all 0.5s ease-out;
+}
+
+.blur {
+  filter: blur(4px);
+  transition: all 0.5s ease-out;
+}/*# sourceMappingURL=base.css.map */

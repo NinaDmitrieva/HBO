@@ -1,0 +1,177 @@
+@import "../styles/extend/hover.scss";
+@import "../variables/typography.scss";
+@import "../variables/colors.scss";
+@import "../styles/extend/font.scss";
+@import "../styles/mixin/media_breakpoints.scss";
+@import "../variables/breakpoints.scss";
+
+.subscription {
+  margin: 60px auto 32px;
+  width: 1274px;
+
+  &_title {
+    @extend %font-h1;
+    padding-bottom: 24px;
+    color: $color_secondary;
+  }
+}
+
+.card-list {
+  position: relative;
+  justify-content: center;
+}
+
+.item-left {
+  left: 9%;
+}
+.item-left::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(-90deg, #000000 0%, rgba(13, 0, 123, 0.25) 100%);
+  border-radius: 12px;
+}
+
+.card-active {
+  z-index: 100;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 89, 193, 0.5) 0%,
+    rgba(13, 0, 123, 0.5) 100%
+  );
+  border: 1px solid rgba(0, 89, 193, 0.5);
+  border: 1px solid rgba(0, 89, 193, 0.5);
+}
+.item-right {
+  right: 9%;
+}
+
+.item-right::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, #000000 0%, rgba(13, 0, 123, 0.25) 100%);
+  border-radius: 12px;
+}
+.card-item {
+  cursor: pointer;
+  position: relative;
+  max-width: 502px;
+  max-height: 296px;
+  border-radius: 12px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.card-title {
+  font-weight: $font-weight_l;
+  font-size: $font-size_l2;
+  line-height: $line-height_l;
+  color: $color_secondary;
+  white-space: nowrap;
+}
+
+.options-list {
+  padding-left: 15px;
+  gap: 16px;
+  flex-direction: column;
+  margin: 0;
+
+  &-item {
+    font-size: 16px;
+    line-height: 19px;
+    color: $color_secondary;
+  }
+}
+
+.btn-box {
+  flex-direction: row;
+  justify-content: end;
+  gap: 10px;
+}
+
+.btn {
+  width: 147px;
+  height: 40px;
+  border-radius: 12px;
+  border: 1px solid $item-color_secondary;
+  border-radius: 12px;
+  background: none;
+  color: $color_secondary;
+
+  font-weight: $font-weight_l;
+  font-size: $font-size_ml;
+  line-height: $line-height_ml-2;
+  text-align: center;
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px 0 rgba(227, 177, 0) inset,
+    0 0 10px 2px rgb(229, 203, 110);
+  transition: all 0.3s ease-out;
+}
+.btn-activ {
+  background: $item-color-active;
+}
+
+@include desktop {
+  .subscription {
+    width: 90%;
+  }
+  .card-list {
+    transition: all 0.5s ease-out;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .card-item {
+    align-self: center;
+  }
+  .item-left {
+    left: 0;
+  }
+  .item-right {
+    right: 0;
+
+    &::before {
+      content: "";
+      background: linear-gradient(
+        -90deg,
+        #000000 0%,
+        rgba(13, 0, 123, 0.25) 100%
+      );
+    }
+  }
+}
+@include table {
+  .subscription {
+    margin: 0 auto;
+  }
+  .card-item {
+    max-width: 100%;
+  }
+  .card-title {
+    font-weight: $font-weight_m;
+    font-size: $font-size_m-2;
+    line-height: $line-height_m-2;
+  }
+  .btn {
+    font-weight: $font-weight_m;
+    font-size: $font-size_s;
+    line-height: $line-height_m;
+  }
+}

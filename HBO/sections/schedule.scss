@@ -1,0 +1,13 @@
+@import "../styles/extend/hover.scss";
+@import "../variables/colors.scss";
+@import "../styles/extend/font.scss";
+@import "../variables/typography.scss";
+
+.content {
+  max-width: 1274px;
+  text-align: center;
+  margin: 0 auto;
+  margin: 100px auto 100px;
+
+  @extend %font-h1;
+}

@@ -1,0 +1,48 @@
+@import "../../variables/colors.scss";
+
+%hover-effect {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.3s ease-out;
+}
+
+%hover-effect-nav-item {
+  cursor: pointer;
+  opacity: 0.5;
+  color: $font-color__hover;
+  transition: all 0.3s ease-out;
+}
+
+%hover-effect-signin-btn {
+  cursor: pointer;
+  background: $btn-bg-color__hover;
+  transition: all 0.3s ease-out;
+}
+
+%hover-effect-slider-scrollLine {
+  cursor: pointer;
+  border-bottom: 2px solid $color_accent;
+  transition: all 0.3s ease-out;
+}
+
+%hover-effect-item-active {
+  opacity: 0.8;
+  transition: all 0.3s ease-out;
+}
+
+%hover-effect-item-movies {
+  background: $bg-color__primary; /*сделала фон темене, что б лучше был виден таекст на белых фонах*/
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease-out;
+  opacity: 1;
+  z-index: 1000;
+}
+
+%hover-effect-watch-wrapper {
+  box-shadow: 0 0 10px 0 rgba(227, 177, 0) inset,
+    0 0 10px 2px rgb(229, 203, 110);
+  transition: all 0.3s ease-out;
+}
+
+
+
