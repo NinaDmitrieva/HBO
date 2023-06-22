@@ -132,4 +132,9 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+}
+@media (max-width: 500px) {
+  .footer-navMenu__menu-link {
+    font-size: 10px;
+  }
 }/*# sourceMappingURL=footer.css.map */

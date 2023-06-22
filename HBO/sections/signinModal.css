@@ -178,7 +178,7 @@
   /*focus*/
 }
 .signin__form-input-checkbox:checked + .input-checkbox__icon {
-  background-color: rgb(255, 255, 255);
+  background-image: url(../img/icon/icons8-чекбокс-зачеканный.png);
 }
 .signin__form-input-checkbox:focus + .input-checkbox__icon {
   border: 2px solid #e38b00;
@@ -202,6 +202,8 @@
   margin-left: -35px;
   border: 1px solid #d9d9d9;
   border-radius: 4px;
+  background-image: url(../img/icon/icons8-пустой.png);
+  background-size: cover;
 }
 
 .checkbox__btn-submit {

@@ -30,17 +30,12 @@
 .header-menu {
   align-items: center;
   gap: 115px;
-  transition: all 0.5s ease-out;
 }
 .header-menu__item {
   color: rgba(255, 255, 255, 0.75);
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
-}
-.header .hide {
-  visibility: hidden;
-  transition: all 0.1s ease-out;
 }
 .header__burger {
   display: none;
@@ -55,7 +50,7 @@
   border-radius: 20px;
 }
 .header__burger .burger-menu_lines {
-  top: 5%;
+  top: 7%;
   left: 90%;
   transform: translate(-50%, -50%);
 }
@@ -85,12 +80,10 @@
   border-radius: 12px;
   font-weight: 700;
   color: #fff;
-  transition: all 0.5s ease-out;
 }
 @media (max-width: 1280px) {
   .header {
     max-width: 90%;
-    transition: all 0.5s ease-out;
   }
   .header-menu {
     gap: 50px;
@@ -101,7 +94,6 @@
 }
 @media (max-width: 1024px) {
   .header-menu__item {
-    transition: all 0.5s ease-out;
     font-size: 11px;
     line-height: 13px;
   }
@@ -121,7 +113,8 @@
     gap: 15px;
   }
   .header-logo {
-    padding-left: 5px;
+    padding-left: 30px;
+    padding-bottom: 5px;
   }
   .header-menu {
     visibility: visible;
@@ -130,24 +123,23 @@
     background: #000;
     z-index: 99;
     width: 100vw;
-    padding-left: 5px;
+    padding-top: 20px;
+    padding-left: 30px;
     padding-bottom: 10%;
   }
   .header-menu__item {
-    transition: all 0.5s ease-out;
     font-size: 16px;
     line-height: 18px;
   }
   .header .signin__btn {
     visibility: visible;
     position: absolute;
-    top: 30%;
+    top: 35%;
     z-index: 99;
     width: 100vw;
   }
   .header .hide {
     visibility: hidden;
-    transition: all 0.1s ease-out;
   }
   .header__burger {
     display: block;
@@ -161,5 +153,10 @@
   }
   .signin__btn {
     width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .header .signin__btn {
+    width: 83vw;
   }
 }/*# sourceMappingURL=header.css.map */
