@@ -1,0 +1,90 @@
+@import "../styles/extend/hover.scss";
+@import "../variables/typography.scss";
+@import "../variables/colors.scss";
+@import "../styles/extend/font.scss";
+@import "../styles/mixin/media_breakpoints.scss";
+@import "../variables/breakpoints.scss";
+
+.faq {
+  max-width: 1280px;
+  min-height: 300px;
+  margin: 20px auto 20px;
+  padding: 5px;
+
+  &_title {
+    @extend %font-h1;
+    padding-bottom: 24px;
+    color: $color_secondary;
+  }
+  &-container {
+    flex-direction: column;
+    gap: 5px;
+
+    &__item {
+      flex-direction: column;
+      &.opened {
+        .faq-container__question__btn::before,
+        .faq-container__question__btn::after {
+          transform: rotate(0deg);
+        }
+        .faq-container__answer {
+          opacity: 1;
+          display: block;
+        }
+      }
+    }
+    &__answer {
+      background: #1b1b24;
+      border-radius: 0px 0px 6px 6px;
+      color: #b7b6de;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 22px;
+      display: none;
+      height: 0;
+      opacity: 0;
+      transition: height 0.25s, opacity 0.25s;
+    }
+
+    &__question {
+      flex-direction: row;
+      justify-content: space-between;
+      background: #21212c;
+      padding: 10px;
+      border-radius: 6px 6px 0px 0px;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 22px;
+      position: relative;
+      &:hover {
+        @extend %hover-effect;
+      }
+      &__btn {
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        transition: transform 3s;
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          width: 20px;
+          height: 2px;
+          background: #9e00ff;
+        }
+
+        &::before {
+          transform: rotate(45deg);
+        }
+        &::after {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+  .answer-title {
+    padding: 10px;
+  }
+}

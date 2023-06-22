@@ -174,7 +174,9 @@
 
     /*checked*/
     &:checked + .input-checkbox__icon {
-      background-color: $color__primary;
+      // background-image: url(../img/icon/icons8-чекбокс-32.png);
+      // background-size: cover;
+       background-image: url(../img/icon/icons8-чекбокс-зачеканный.png);
     }
     /*focus*/
     &:focus + .input-checkbox__icon {
@@ -201,6 +203,8 @@
   margin-left: -35px;
   border: 1px solid $item-color;
   border-radius: 4px;
+  background-image: url(../img/icon/icons8-пустой.png);
+  background-size: cover;
 }
 .checkbox__btn-submit {
   width: 100%;

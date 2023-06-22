@@ -59,7 +59,7 @@
     border-bottom: 1px solid $item-color-active;
     width: 100px;
     position: absolute;
-    animation: progressbar 12s infinite;
+    animation: progressbar 12s linear infinite;
 
     &:hover {
       @extend %hover-effect-item-active;
@@ -104,6 +104,12 @@
 @keyframes progressbar {
   0% {
     width: 0;
+  }
+  33% {
+    width: 33%;
+  }
+  66% {
+    width: 66%;
   }
   100% {
     width: 100%;

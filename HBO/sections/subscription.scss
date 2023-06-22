@@ -163,6 +163,7 @@
   }
   .card-item {
     max-width: 100%;
+    padding: 20px;
   }
   .card-title {
     font-weight: $font-weight_m;
@@ -173,5 +174,23 @@
     font-weight: $font-weight_m;
     font-size: $font-size_s;
     line-height: $line-height_m;
+  }
+}
+
+@include mobile {
+  .card-item::before {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 89, 193, 0.25) 0%,
+      rgba(13, 0, 123, 0.25) 100%
+    );
+    border: 1px solid rgba(0, 89, 193, 0.5);
+  }
+  .btn {
+    width: 100%;
+
+    &-box {
+      flex-direction: column;
+    }
   }
 }
